@@ -88,7 +88,7 @@ var gets = {
       res.json({error: "no model find"});
     }
   },
-  '/update/:model/:id': function(req,res,next){
+  '/upd/:model/:id': function(req,res,next){
     if(models.hasOwnProperty(req.params.model)){
       models[req.params.model].findById( req.params.id , function(err,o){
         if(o){
