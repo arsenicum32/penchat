@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 
 var router = express.Router();
 
-mongoose.connect('mongodb://localhost/vk');
+mongoose.connect('mongodb://localhost/penchat');
 
 var db = mongoose.connection;
 
@@ -23,17 +23,28 @@ var history = mongoose.model('History', {
   time : { type : Date, default: Date.now }
 });
 
-var order = mongoose.model('Order', {
+var users = mongoose.model('Users', {
   name: String,
   email: String,
   phone: String,
+  ava: String,
+  desc: String,
   data: Object,
   time : { type : Date, default: Date.now }
 });
 
+var canvas = mongoose.model('Canvas', {
+  name: String,
+  owner: String,
+  desc: String,
+  data: Object,
+  time: { type : Date, default: Date.now }
+});
+
 var models = {
   'history': history,
-  'order': order
+  'canvas': canvas,
+  'users': users
 }
 
 var gets = {

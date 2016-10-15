@@ -8,6 +8,8 @@ var stylus = require('stylus');
 
 var app = express();
 
+var socket = require('./routes/socket');
+
 
 app.set('view engine', 'jade');
 
@@ -28,11 +30,15 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 app.use('/db', require('./routes/db') );
-app.use('/api', require('./routes/api') );
+//app.use('/api', require('./routes/api') );
 
-app.get('/', function (req, res,next) {
-  res.render('index');
+app.get('/html/:page', function (req, res,next) {
+  res.render(req.params.page);
 });
+
+app.get('/', function(req,res,next){
+  res.send('hi!!');
+})
 
 app.listen(8500, function () {
   console.log('Example app listening on port 8500!');
