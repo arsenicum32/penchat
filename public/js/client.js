@@ -4,7 +4,7 @@ socket.on('connect', function() {
      socket.emit('join', 'room'); //chat room id unique to two users
 });
 
-socket.on( 'mes', function( data ) {
+socket.on( 'res', function( data ) {
      $("#chat" ).append('<div>' + data.name + ' : ' + data.message + '</div>');
 });
 
@@ -20,5 +20,5 @@ $(document).ready(function(){
 
 //Form js
 function sendpm(room,message,name) {
-     socket.emit( 'mes', { room: room, message: message, name: name });
+     socket.emit( 'send', { room: room, message: message, name: name });
 }
