@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,100&subset=latin,cyrillic);
-
 *,
 *:before,
 *:after {
@@ -20,7 +18,6 @@ input{
           user-select: auto;
 }
 body {
-  font-family: 'Roboto Mono';
   margin: 0;
   overflow: hidden;
   font-family: Gill Sans;
@@ -59,7 +56,7 @@ mouse {
       -ms-user-select: auto;
           user-select: auto;
 }
-.callback{
+#callback{
   position: absolute;
   width: 50vw;
   display: -webkit-flex;
@@ -74,12 +71,12 @@ mouse {
   top: calc(50vh - 40vh);
   border: 3px solid black;
 }
-.callback #close{
+#callback #close{
   margin: 30px;
   font-size: 30px;
   float: right;
 }
-.callback .maincontent{
+#callback .maincontent{
   width:100%;
   text-align: center;
   display: -webkit-flex;
@@ -87,24 +84,24 @@ mouse {
   -webkit-justify-content: center;
   -webkit-flex-direction: column;
 }
-.callback .maincontent a{
+#callback .maincontent a{
   background: blue;
   padding: 12px;
   color: white;
   margin: 10px;
 }
-.callback .maincontent input{
+#callback .maincontent input{
   margin: 30px;
   border: 3px dotted black;
   padding: 5px;
   font-size: 1.5em;
 }
-.callback .maincontent p{
+#callback .maincontent p{
   margin: 30px;
 }
 
 @media only screen and (orientation: portrait) {
-  .callback{
+  #callback{
     width: 100vw;
     height: 100vh;
     top:0;

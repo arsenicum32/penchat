@@ -65,7 +65,6 @@ var CAN = false;
 var SHOWMENU = false;
 canvas.on({
   'mouse:down': function(options) {
-    $('#callback').hide();
     //SHOWMENU=true;
     if (options.target) {
       options.target.opacity = 0.5;
@@ -78,6 +77,31 @@ canvas.on({
     //
     //
     ///////////////////////////////////////
+    if (canvas.getActiveObject()) {
+      if(canvas.getActiveObject().onClick){
+        var sw = canvas.getActiveObject().onClick;
+        switch (sw) {
+          case "присоединиться":
+              window.open("http://penchat.ru", "_blank");
+            break;
+            case "создать":
+                window.open("http://penchat.ru", "_blank");
+              break;
+              case "смотреть":
+                  window.open("http://penchat.ru", "_blank");
+                break;
+                case "посетить api.penchat.ru":
+                    window.open("http://api.penchat.ru", "_blank");
+                  break;
+                  case "связаться":
+                    $('#callback').show();
+                      //window.open("http://penchat.ru", "_blank");
+                    break;
+          default:
+        }
+      }
+      /////////////////////////////////////////
+    }
   },
   'mouse:up': function(options) {
     if (options.target) {
@@ -179,25 +203,19 @@ for(var i=0;i<source.length;i++){
 	}
 	var point = {}, t = 0, step = 0.000005;
 var t=0;
-var contentLoader, SETLOCAL = false; //// SETLOCAL - отвечает за определение языка !!!!
+var contentLoader;
 
 $(window).bind('mousewheel', function(event) {
   $('mouse').hide(500);
-  if(t>0.4&&t<0.6){
-    canvas.isDrawingMode = true;
-    brusher((t - 0.4)*5 , normselect ); /// очень аккуратно функция кисть
-  }else{
-    canvas.isDrawingMode = false;
-  }
-  if(!contentLoader && SETLOCAL){
-    loadContent();  //////////// здесь загружается весь контент сайта !!!!
+  if(!contentLoader){
+    loadContent();
     contentLoader = 1;
     normselect();
   }
   var rel = event.originalEvent.wheelDelta;
   animationWheel(rel); // animation listener
   if (canvas.getActiveObject()) { // ahahahaah rotate
-    canvas.getActiveObject().left += rel/1000;
+    canvas.getActiveObject().angle += rel/20;
   }
   if(t < 1){
      if(rel>0){

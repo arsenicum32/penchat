@@ -2,29 +2,12 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <meta property="og:title" content="undefined" />
-    <meta property="og:url" content="http://undefined.tk" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Скромная полочка интернет-артефактов" />
-    <meta property="og:image" content="http://undefined.tk/ogimage.jpg" />
-    <title>undefined</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/iphone.css">
-    <script src="min/lib.js"></script>
-    <script src="min/data.js"></script>
-    <script>
-        !function(a){var b=/iPhone/i,c=/iPod/i,d=/iPad/i,e=/(?=.*\bAndroid\b)(?=.*\bMobile\b)/i,f=/Android/i,g=/(?=.*\bAndroid\b)(?=.*\bSD4930UR\b)/i,h=/(?=.*\bAndroid\b)(?=.*\b(?:KFOT|KFTT|KFJWI|KFJWA|KFSOWI|KFTHWI|KFTHWA|KFAPWI|KFAPWA|KFARWI|KFASWI|KFSAWI|KFSAWA)\b)/i,i=/IEMobile/i,j=/(?=.*\bWindows\b)(?=.*\bARM\b)/i,k=/BlackBerry/i,l=/BB10/i,m=/Opera Mini/i,n=/(CriOS|Chrome)(?=.*\bMobile\b)/i,o=/(?=.*\bFirefox\b)(?=.*\bMobile\b)/i,p=new RegExp("(?:Nexus 7|BNTV250|Kindle Fire|Silk|GT-P1000)","i"),q=function(a,b){return a.test(b)},r=function(a){var r=a||navigator.userAgent,s=r.split("[FBAN");return"undefined"!=typeof s[1]&&(r=s[0]),s=r.split("Twitter"),"undefined"!=typeof s[1]&&(r=s[0]),this.apple={phone:q(b,r),ipod:q(c,r),tablet:!q(b,r)&&q(d,r),device:q(b,r)||q(c,r)||q(d,r)},this.amazon={phone:q(g,r),tablet:!q(g,r)&&q(h,r),device:q(g,r)||q(h,r)},this.android={phone:q(g,r)||q(e,r),tablet:!q(g,r)&&!q(e,r)&&(q(h,r)||q(f,r)),device:q(g,r)||q(h,r)||q(e,r)||q(f,r)},this.windows={phone:q(i,r),tablet:q(j,r),device:q(i,r)||q(j,r)},this.other={blackberry:q(k,r),blackberry10:q(l,r),opera:q(m,r),firefox:q(o,r),chrome:q(n,r),device:q(k,r)||q(l,r)||q(m,r)||q(o,r)||q(n,r)},this.seven_inch=q(p,r),this.any=this.apple.device||this.android.device||this.windows.device||this.other.device||this.seven_inch,this.phone=this.apple.phone||this.android.phone||this.windows.phone,this.tablet=this.apple.tablet||this.android.tablet||this.windows.tablet,"undefined"==typeof window?this:void 0},s=function(){var a=new r;return a.Class=r,a};"undefined"!=typeof module&&module.exports&&"undefined"==typeof window?module.exports=r:"undefined"!=typeof module&&module.exports&&"undefined"!=typeof window?module.exports=s():"function"==typeof define&&define.amd?define("isMobile",[],a.isMobile=s()):a.isMobile=s()}(this);
-        (function () {
-            var MOBILE_SITE = '/mindex.html';
-            if (isMobile.apple.phone || isMobile.android.phone || isMobile.seven_inch) {
-                    document.location = MOBILE_SITE;
-            }
-        })();
-    </script>
+    <title>super navigation</title>
+        <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37031375 = new Ya.Metrika({ id:37031375, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37031375" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
     <canvas id='c'></canvas>
 <!-- <p id='d'>hi</p> -->
 <mouse>
@@ -47,55 +30,32 @@
 <circle>
 </svg>
 </mouse>
-<!-- <div id='callback' style='display:none'>
+<div id='callback'>
   <div style='width:100%'>
    <div id='close'>✕</div>
   </div>
   <div class='maincontent'>
     <p>ваш телефон или email:</p>
-    <input placeholder="+7000000000" id='phoneor'></input>
-    <input placeholder="Василий" id='nameor'></input>
+    <input placeholder="+7000000000"></input>
     <a href='#' id='sendaction'>отправить</a>
   </div>
   <div style='width:100%; height: 20%;'>
   </div>
-</div> -->
-<div class="iphone" style="position: absolute; top: calc(60vh - 305px);left: calc(50vw - 150px)" id='callback' style='display:none'>
-  <div class="border">
-    <form class="chat">
-      <span></span>
-      <div class="messages" id="adobewordpress">
-        <div class="message">
-        </div>
-        <div class="message">
-        </div>
-      </div>
-      <input type="text" placeholder="Your message">
-      <input type="submit" value="Send">
-    </form>
-  </div>
 </div>
 <!-- <textarea id='script'></textarea><div id='errlog'></div><div class='hidden'></div> -->
-    <!-- // <script src='js/lib/fabric.min.js'></script>
-    // <script src='js/lib/jquery.min.js'></script>
-    // <script src="js/index.js"></script>
-    // <script src="js/brusher.js"></script>
-    // <script src="js/grid.js"></script>
-    // <script src="js/logo.js"></script>
-    // <script src="js/content.js"></script>
-    // <script src="js/normselect.js"></script>
-    // <script src="js/animation.js"></script>
-    // <script src="js/DOMevent.js"></script> -->
+    <script src='js/fabric.min.js'></script>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/logo.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/normselect.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/DOMevent.js"></script>
 
 
-<script src="min/index.js"></script>
-<script src="min/all.js"></script>
 
-<div id="traffgui_vk">
-        <a href="http://traffgui.ru/" title="Соцфишинг - идентификация посетителей сайта">
-            <img src="http://traffgui.ru/img/tg.png" alt="SocFishing - сервис автоматизации маркетинга">
-        </a>
-    </div>
-    <script src="http://traffgui.ru/inf.js?utg=272" type="text/javascript"></script>
+
+
   </body>
 </html>
