@@ -8,9 +8,9 @@ io.sockets.on( 'connection', function( socket ) {
       console.log("User Joined the room: "+socket.room);
   });
   socket.on('send', function (data) {
-      console.log('mes: ' + JSON.stringify(data));
+      console.log('send: ' + JSON.stringify(data));
       data.room?
-      io.sockets.in(data.room).emit('rec', data):
+      io.sockets.in(data.room).emit('res', data):
       void(0);
   });
 });

@@ -1,4 +1,4 @@
-var socket = io.connect( 'http://85.143.209.210:1280' );
+var socket = io.connect( 'http://85.143.209.210:1280' ); // 85.143.209.210
 
 socket.on('connect', function() {
      socket.emit('join', 'room'); //chat room id unique to two users
