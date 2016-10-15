@@ -7,9 +7,10 @@ io.sockets.on( 'connection', function( socket ) {
       socket.room = room;
       console.log("User Joined the room: "+socket.room);
   });
-  
   socket.on('mes', function (data) {
       console.log('mes: ' + JSON.stringify(data));
-      io.sockets.in(data.room).emit('mes', data);
+      data.room?
+      io.sockets.in(data.room).emit('mes', data):
+      void(0);
   });
 });
