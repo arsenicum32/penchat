@@ -49,7 +49,9 @@ var models = {
 
 var gets = {
   '/': function(req,res,next){
-    res.json(models);
+    var keys = [];
+    for(var k in models) keys.push(k);
+    res.json(keys);
   },
   '/see/:model': function(req,res,next){
     if(models.hasOwnProperty(req.params.model)){
@@ -69,10 +71,35 @@ var gets = {
       res.json({error: "no model find"});
     }
   },
+  '/get/:model/:id': function(req,res,next){
+    if(models.hasOwnProperty(req.params.model)){
+      models[req.params.model].findById( req.params.id , function(err,o){
+        o? res.json(o) : res.json({error: "not found"});
+      })
+    }else{
+      res.json({error: "no model find"});
+    }
+  },
   '/add/:model': function(req,res,next){
     if(models.hasOwnProperty(req.params.model)){
       var ac = new models[req.params.model]( req.query );
       res.json(ac.save());
+    }else{
+      res.json({error: "no model find"});
+    }
+  },
+  '/update/:model/:id': function(req,res,next){
+    if(models.hasOwnProperty(req.params.model)){
+      models[req.params.model].findById( req.params.id , function(err,o){
+        if(o){
+          for(var i in req.query){
+            o[i] = req.query[i];
+          }
+          res.json(o.save());
+        } else {
+          res.json({error: "not found"});
+        }
+      })
     }else{
       res.json({error: "no model find"});
     }
