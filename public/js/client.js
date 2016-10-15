@@ -20,5 +20,5 @@ $(document).ready(function(){
 
 //Form js
 function sendpm(room,message,name) {
-     socket.emit( 'send', { room: room, message: message, name: name });
+     socket.emit( 'snd', { room: room, message: message, name: name });
 }

@@ -7,8 +7,8 @@ io.sockets.on( 'connection', function( socket ) {
       socket.room = room;
       console.log("User Joined the room: "+socket.room);
   });
-  socket.on('send', function (data) {
-      console.log('send: ' + JSON.stringify(data));
+  socket.on('snd', function (data) {
+      console.log('snd: ' + JSON.stringify(data));
       data.room?
       io.sockets.in(data.room).emit('res', data):
       void(0);
