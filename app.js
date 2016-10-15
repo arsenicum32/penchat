@@ -13,16 +13,16 @@ var socket = require('./routes/socket');
 
 app.set('view engine', 'jade');
 
-app.use(stylus.middleware({
-  src: path.join(__dirname, 'public'),
-  compile: function(str, path) {
-    return stylus(str)
-      .use(autoprefixer())   // autoprefixer
-      .set('filename', path) // @import
-      .set('compress', true) // compress
-    ;
-  }
-}));
+// app.use(stylus.middleware({
+//   src: path.join(__dirname, 'public'),
+//   compile: function(str, path) {
+//     return stylus(str)
+//       .use(autoprefixer())   // autoprefixer
+//       .set('filename', path) // @import
+//       .set('compress', true) // compress
+//     ;
+//   }
+// }));
 
 app.use(busboy());
 app.use(cors());
