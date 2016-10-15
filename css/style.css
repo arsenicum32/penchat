@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,100&subset=latin,cyrillic);
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+input{
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+body {
+  font-family: 'Roboto Mono';
+  margin: 0;
+  overflow: hidden;
+  font-family: Gill Sans;
+}
+body interface {
+  background: #ffc0cb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+#d {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+mouse {
+  position: absolute;
+  bottom: 80px;
+  width: 40px;
+  height: 60px;
+  left: calc(50vw - 20px);
+}
+#script{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  height: 500px;
+  background: #ccc;
+  opacity: .9;
+  font-family: Gill Sans;
+  display: none;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+.callback{
+  position: absolute;
+  width: 50vw;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: space-between;
+  min-width: 500px;
+  height: 80vh;
+  background: white;
+  left: calc(50vw - 25vw);
+  top: calc(50vh - 40vh);
+  border: 3px solid black;
+}
+.callback #close{
+  margin: 30px;
+  font-size: 30px;
+  float: right;
+}
+.callback .maincontent{
+  width:100%;
+  text-align: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+}
+.callback .maincontent a{
+  background: blue;
+  padding: 12px;
+  color: white;
+  margin: 10px;
+}
+.callback .maincontent input{
+  margin: 30px;
+  border: 3px dotted black;
+  padding: 5px;
+  font-size: 1.5em;
+}
+.callback .maincontent p{
+  margin: 30px;
+}
+
+@media only screen and (orientation: portrait) {
+  .callback{
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left: 0;
+  }
+}
+
+#errlog{
+  position: absolute;
+  top: 500px;
+  right: 0;
+  width: 40vw;
+  height: 50px;
+  background: yellow;
+  opacity: .9;
+  display: none;
+}
+.hidden{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10px;
+  background: black;
+  width: 40vw;
+}
