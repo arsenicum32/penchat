@@ -1,11 +1,11 @@
 var TMR = 0;
 
 setInterval(function(){
-  //addObject({});
+  Math.random() > 0.95  ? addObject({}): void(0);
   console.log(TMR);
   TMR +=1;
   fireobject(TMR);
-  //addText({text: "hello world"})
+  Math.random() > 0.95  ? addText({text: "hello world"}) : void(0);
 }, 100);
 
 // alert('test');

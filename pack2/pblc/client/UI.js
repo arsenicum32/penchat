@@ -62,10 +62,10 @@ $(document).ready(function(){
     share: 'four',
     join: `
       <div class='join'>
-        <div class="avap"></div>
+        <img class="avap" src="https://robohash.org/ars32.png"></img>
         <div class="field">
-          <input class='input' placeholder='username' />
-          <input class='input' placeholder='password' />
+          <input class='input' id='rn' placeholder='username' />
+          <input class='input' id='rp' type='password' placeholder='password' />
         </div>
       </div>
     `,
