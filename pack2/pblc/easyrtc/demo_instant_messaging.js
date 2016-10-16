@@ -24,6 +24,33 @@
 //POSSIBILITY OF SUCH DAMAGE.
 //
 var selfEasyrtcid = "";
+ 
+function connect() {
+  easyrtc.connect("easyrtc.instantMessaging", loginSuccess, loginFailure);
+  easyrtc.setRoomOccupantListener(usersQuantityRender);
+}
+ 
+function loginSuccess(easyrtcid) {
+  selfEasyrtcid = easyrtcid;
+}
+ 
+function loginFailure(errorCode, message) {
+  easyrtc.showError(errorCode, message);
+}
+
+function usersQuantityRender(roomName, occupants, isPrimary) {
+  var users = 0;
+  for(var easyrtcid in occupants) {
+    users++;
+  }
+  document.getElementById('usersQuantity').innerHTML = users;
+}
+
+/*                                                                            */
+
+  /* easyrtc.setPeerListener(addToConversation);
+  easyrtc.setRoomOccupantListener(convertListToButtons); */
+ 
 function addToConversation(who, msgType, content) {
   // Escape html special characters, then add linefeeds.
   content = content.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
@@ -32,17 +59,9 @@ function addToConversation(who, msgType, content) {
   "<b>" + who + ":</b>&nbsp;" + content + "<br />";
 }
  
- 
-function connect() {
-  easyrtc.setPeerListener(addToConversation);
-  easyrtc.setRoomOccupantListener(convertListToButtons);
-  easyrtc.connect("easyrtc.instantMessaging", loginSuccess, loginFailure);
-}
- 
- 
 function convertListToButtons (roomName, occupants, isPrimary) {
-  console.log(document.getElementById('menu'));
-  var otherClientDiv = document.getElementById("otherClients");
+  console.log(arguments);
+  var otherClientDiv = document.getElementById("usersQuantity");
   while (otherClientDiv.hasChildNodes()) {
     otherClientDiv.removeChild(otherClientDiv.lastChild);
   }
@@ -76,13 +95,3 @@ function sendStuffWS(otherEasyrtcid) {
   document.getElementById("sendMessageText").value = "";
 }
  
- 
-function loginSuccess(easyrtcid) {
-  selfEasyrtcid = easyrtcid;
-  document.getElementById("iam").innerHTML = "I am " + easyrtcid;
-}
- 
- 
-function loginFailure(errorCode, message) {
-  easyrtc.showError(errorCode, message);
-}

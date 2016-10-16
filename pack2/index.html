@@ -17,13 +17,18 @@
     <script src="pblc/client/UI-events.js"></script>
     <script src="pblc/client/socket-events.js"></script>
     <script src="pblc/client/hack.js"></script>
-  </head>
-  <body>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/easyrtc/easyrtc.js"></script>
+    <script src="pblc/easyrtc/demo_instant_messaging.js"></script>
+
+    </head>
+  <body onload="connect()">
 <canvas id="c"></canvas>
 <div id="top">
   <div id="menu"></div>
   <div class="left"><a href="#">file</a><a href="#">edit</a><a href="#">add</a></div>
-  <div class="right"><a id="counter">online: <span>0</span></a><a href="#">share</a><a id="sel" href="#">join</a></div>
+  <div class="right"><a id="counter">online: <span id="usersQuantity"></span></a><a href="#">share</a><a id="sel" href="#">join</a></div>
 </div>
 <div id="menubox">
 </div>
