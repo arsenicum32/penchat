@@ -103,7 +103,7 @@ function fireobject(tt){
     fabric.util.getRandomInt(0, 600) > 400  ? addObject({}): void(0);
   }
   if(t>22 && t<108){
-    fabric.util.getRandomInt(0, 600) > 400 ? addText({text: pitch.split('\n')[ fabric.util.getRandomInt(0, pitch.split('\n').length ) ] }) : void(0);
+    fabric.util.getRandomInt(0, 600) > 550 ? addText({text: pitch.split('\n')[ fabric.util.getRandomInt(0, pitch.split('\n').length ) ] }) : void(0);
   }
   canvas.renderAll();
 }
