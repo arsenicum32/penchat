@@ -87,7 +87,8 @@ $(document).ready(function(){
         $(this).css('opacity', 0.5);
       },
       stop: function(){
-        adaptatenative("#draggable",propH);
+        $(this).css('opacity', 1);
+        //adaptatenative("#draggable",propH);
        }
       });
   });

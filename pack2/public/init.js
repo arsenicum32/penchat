@@ -43,3 +43,15 @@ fabric.Canvas.prototype.uniqueID = function(){
         '-' + chr4() +
         '-' + chr4() + chr4() + chr4();
   };
+
+fabric.Object.prototype.toObject = (function (toObject) {
+      return function () {
+        var color = ['blue','red','yellow','hotpink'][Math.floor(Math.random()*4)];
+          return fabric.util.object.extend(toObject.call(this), {
+            borderColor: color,
+            cornerColor: color,
+            cornerSize: 6,
+            transparentCorners: false
+          });
+      };
+})(fabric.Object.prototype.toObject);

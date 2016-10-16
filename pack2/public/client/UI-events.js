@@ -13,4 +13,11 @@ $(document).ready(function(){
       });
     })
   })();
+
 });
+
+var mode = 'hand';
+ 
+function UI(m){
+  mode = m;
+}

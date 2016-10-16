@@ -1,0 +1,99 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:29
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-add-cursor:before { content: "\f100"; }
+.flaticon-add-mark:before { content: "\f101"; }
+.flaticon-add-point:before { content: "\f102"; }
+.flaticon-align-cursor:before { content: "\f103"; }
+.flaticon-bleed:before { content: "\f104"; }
+.flaticon-crop-symbol:before { content: "\f105"; }
+.flaticon-cursor:before { content: "\f106"; }
+.flaticon-delete-cursor:before { content: "\f107"; }
+.flaticon-delete-point:before { content: "\f108"; }
+.flaticon-diagonal-resize:before { content: "\f109"; }
+.flaticon-disabled:before { content: "\f10a"; }
+.flaticon-hand-pointer:before { content: "\f10b"; }
+.flaticon-hand-pointer-1:before { content: "\f10c"; }
+.flaticon-help-cursor:before { content: "\f10d"; }
+.flaticon-horizontal-resize:before { content: "\f10e"; }
+.flaticon-horizontal-resize-1:before { content: "\f10f"; }
+.flaticon-loading-cursor:before { content: "\f110"; }
+.flaticon-loupe:before { content: "\f111"; }
+.flaticon-move-cursor:before { content: "\f112"; }
+.flaticon-move-up:before { content: "\f113"; }
+.flaticon-pen-tool:before { content: "\f114"; }
+.flaticon-redo:before { content: "\f115"; }
+.flaticon-rotate:before { content: "\f116"; }
+.flaticon-text-symbol:before { content: "\f117"; }
+.flaticon-type-move:before { content: "\f118"; }
+.flaticon-vertical-resize:before { content: "\f119"; }
+.flaticon-wait:before { content: "\f11a"; }
+.flaticon-waiting-cursor:before { content: "\f11b"; }
+.flaticon-zoom-in:before { content: "\f11c"; }
+.flaticon-zoom-out:before { content: "\f11d"; }
+    
+    $font-Flaticon-add-cursor: "\f100";
+    $font-Flaticon-add-mark: "\f101";
+    $font-Flaticon-add-point: "\f102";
+    $font-Flaticon-align-cursor: "\f103";
+    $font-Flaticon-bleed: "\f104";
+    $font-Flaticon-crop-symbol: "\f105";
+    $font-Flaticon-cursor: "\f106";
+    $font-Flaticon-delete-cursor: "\f107";
+    $font-Flaticon-delete-point: "\f108";
+    $font-Flaticon-diagonal-resize: "\f109";
+    $font-Flaticon-disabled: "\f10a";
+    $font-Flaticon-hand-pointer: "\f10b";
+    $font-Flaticon-hand-pointer-1: "\f10c";
+    $font-Flaticon-help-cursor: "\f10d";
+    $font-Flaticon-horizontal-resize: "\f10e";
+    $font-Flaticon-horizontal-resize-1: "\f10f";
+    $font-Flaticon-loading-cursor: "\f110";
+    $font-Flaticon-loupe: "\f111";
+    $font-Flaticon-move-cursor: "\f112";
+    $font-Flaticon-move-up: "\f113";
+    $font-Flaticon-pen-tool: "\f114";
+    $font-Flaticon-redo: "\f115";
+    $font-Flaticon-rotate: "\f116";
+    $font-Flaticon-text-symbol: "\f117";
+    $font-Flaticon-type-move: "\f118";
+    $font-Flaticon-vertical-resize: "\f119";
+    $font-Flaticon-wait: "\f11a";
+    $font-Flaticon-waiting-cursor: "\f11b";
+    $font-Flaticon-zoom-in: "\f11c";
+    $font-Flaticon-zoom-out: "\f11d";

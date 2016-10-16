@@ -18,18 +18,6 @@ $(document).ready(function(){
   }
   retina();
 
-  fabric.Object.prototype.toObject = (function (toObject) {
-      return function () {
-        var color = ['blue','red','yellow','hotpink'][Math.floor(Math.random()*4)];
-          return fabric.util.object.extend(toObject.call(this), {
-            borderColor: color,
-            cornerColor: color,
-            cornerSize: 6,
-            transparentCorners: false
-          });
-      };
-  })(fabric.Object.prototype.toObject);
-
   $(window).on('resize', function() {
     canvas.setHeight($(window).height());
     canvas.setWidth($(window).width());
@@ -60,11 +48,14 @@ $(document).ready(function(){
   var SHOWMENU = false;
   canvas.on({
     'mouse:down': function(options) {
+
+      canvas.isDrawingMode = mode == 'pen';
+
       if (options.target) {
         //options.target.opacity = 0.5;
         canvas.renderAll();
       };
-      if (canvas.getActiveObject() == null) {
+      if (canvas.getActiveObject() == null && mode != 'pen') {
         PRX = options.e.clientX;
         PRY = options.e.clientY;
         CAN = true;
@@ -74,16 +65,22 @@ $(document).ready(function(){
       if (options.target) {
         options.target.opacity = 1;
         canvas.renderAll();
-      };
-      if (canvas.getActiveObject() == null) {
+
+      }
+      if (canvas.getActiveObject() == null && mode != 'pen') {
         offsetX -= options.e.clientX - PRX;
         offsetY -= options.e.clientY - PRY;
         canvas.absolutePan(new fabric.Point(offsetX, offsetY));
         CAN = false;
+
+        if(mode=='text'){
+          addText({text: "hello canvas!!!"});
+        }
       }
     },
     'mouse:move': function(options) {
-      if (canvas.getActiveObject() == null && CAN) {
+      normselect();
+      if (canvas.getActiveObject() == null && CAN && mode != 'pen') {
         canvas.absolutePan(new fabric.Point(offsetX - options.e.clientX + PRX, offsetY - options.e.clientY + PRY));
       }
     },
@@ -122,16 +119,20 @@ $(document).ready(function(){
   });
   $('body').on("keypress", function(e){ // эта сучка удаляет объекты со сцены, если мы не в режиме Т
     var sym = String.fromCharCode(e.charCode);
-        if(e.keyCode==8){
+        if(e.keyCode===61){
           var activeObject = canvas.getActiveObject();
           var activeGroup = canvas.getActiveGroup();
           var item = activeObject || activeGroup;
           if(item){ // говно !!!!!!!
-            socket.emit('remove',{id: item.id});
-          }else{
-            if(item.type=='text'){
-              socket.emit('settext', {id: canvas.getActiveObject().id , text: 'sef' });
+            //socket.emit('remove',{id: item.id});
+            if(item.type==='text'){
+              canvas.getActiveObject()?canvas.getActiveObject().setText( canvas.getActiveObject().text.slice(0, -1) ):void(0);
+              //socket.emit('settext', {id: canvas.getActiveObject().id , text: 'sef' });
+            }else{
+              item.remove();
             }
+          }else{
+
           }
           canvas.renderAll();
         }else{
@@ -139,7 +140,7 @@ $(document).ready(function(){
           var activeGroup = canvas.getActiveGroup();
           var item = activeObject || activeGroup;
           if(item){
-            if(item.type==='text'){
+            if(item.type==='text' && mode=='text'){
               canvas.getActiveObject()?canvas.getActiveObject().setText( canvas.getActiveObject().text + sym):void(0);
                     socket.emit('settext', {id: canvas.getActiveObject().id , text: canvas.getActiveObject().text + sym });
                     canvas.renderAll();
@@ -156,7 +157,7 @@ $(document).ready(function(){
     var options = {
       top: fabric.util.getRandomInt(0, 600),
       left: fabric.util.getRandomInt(0, 600),
-      fill: 'green'
+      fill: ['pink', 'yellow', 'hotpink'][fabric.util.getRandomInt(0, 2)]
     };
     if (klass === 'Circle') {
       options.radius = dim;
@@ -172,8 +173,6 @@ $(document).ready(function(){
   //   canvas.item(n).hasControls = canvas.item(n).hasBorders = false;
   // }
   // canvas.renderAll();
-
-  //normselect();
 
   canvas.on('mouse:move',function(){
     $('textarea').val(JSON.stringify( canvas.toJSON(), null, ' '));
