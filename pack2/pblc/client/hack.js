@@ -79,9 +79,11 @@ setInterval(function(){
 
 var fabr = [];
 
+var robots = 0;
+
 function fireobject(tt){
   var t = tt/10;
-  if(t==1){
+  if(t==5){
     var o = addObject({
       type: 'Rect',
       width: 100,
@@ -92,4 +94,9 @@ function fireobject(tt){
     });
     fabr.push(o.id);
   }
+
+  if(t<18 && t>7){
+    objEdit({id: fabr[0], left: 30 + tt, top: 40 + t});
+  }
+  canvas.renderAll();
 }
