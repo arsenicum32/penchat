@@ -195,3 +195,26 @@ canvas {
 .adder{
   cursor: pointer;
 }
+.notify{
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  position: absolute;
+  display: flex;
+  background: #eee;
+  line-height: 40px;
+  opacity: .5;
+  border: 2px solid #ccc;
+}
+
+.notify img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  margin: auto;
+}
+.notify small{
+  margin: auto;
+  margin-left: 0px;
+}

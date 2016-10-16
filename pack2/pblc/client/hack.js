@@ -74,15 +74,17 @@ setInterval(function(){
 // Хотел пару слов про перспективы продукта, ненарадуюсь на 502 - однозначно хайлоадс… 7
 //
 //
-// Итого: 1,8 мин
-
+// Итого: 1,8 мин ///REDME
 
 var fabr = [];
 
 var robots = 0;
 
 function fireobject(tt){
+  $('.notify').hide();
+
   var t = tt/10;
+
   if(t==5){
     var o = addObject({
       type: 'Rect',
@@ -97,6 +99,9 @@ function fireobject(tt){
 
   if(t<18 && t>7){
     objEdit({id: fabr[0], left: 30 + tt, top: 40 + t});
+    $('.notify').show();
+    $('.notify').css('top', '100px' );
+    $('.notify').css('left', 40 + t*2 + 'px');
   }
   canvas.renderAll();
 }
