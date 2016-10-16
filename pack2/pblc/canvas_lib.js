@@ -4,7 +4,7 @@ function addObject(opt){
   var options = {
     top: opt.top?parseFloat(opt.top):fabric.util.getRandomInt(0, 600),
     left: opt.left?parseFloat(opt.left):fabric.util.getRandomInt(0, 600),
-    fill: opt.fill || 'hotpink',
+    fill: opt.fill || ['pink', 'yellow', 'blue'][fabric.util.getRandomInt(0, 2)],
     id: opt.id || canvas.uniqueID(),
     name: opt.name || canvas.uniqueID()
   };

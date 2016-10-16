@@ -55,9 +55,9 @@ $(document).ready(function(){
     file: 'test',
     edit: 'two',
     add: `
-      <div class='rect adder'></div>
-      <div class='circle adder'></div>
-      <div class='tri adder'></div>
+      <div class='rect adder' onclick='addObject({type: "Rect"})'></div>
+      <div class='circle adder' onclick='addObject({type: "Circle"})'></div>
+      <div class='tri adder' onclick='addObject({type: "Triangle"})'></div>
     `,
     share: 'four',
     join: `
