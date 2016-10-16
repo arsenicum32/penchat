@@ -51,7 +51,7 @@ $(document).ready(function(){
     }
   });
 
-  var items = {
+  items = {
     file: 'test',
     edit: 'two',
     add: `
@@ -62,32 +62,15 @@ $(document).ready(function(){
     share: 'four',
     join: `
       <div class='join'>
-        <img class="avap" src="https://robohash.org/ars32.png"></img>
+        <div class="avap"></div>
         <div class="field">
-          <input class='input' id='rn' placeholder='username' />
-          <input class='input' id='rp' type='password' placeholder='password' />
+          <input class='input' placeholder='username' />
+          <input class='input' placeholder='password' />
         </div>
       </div>
     `,
     ids: 'six',
-    counter: `
-      <div class='profile'>
-        <img class='ava' src="https://robohash.org/sefjkf.png" />
-        <small>Name Surname</small>
-      </div>
-      <div class='profile'>
-        <img class='ava' src="https://robohash.org/sehfjk.png" />
-        <small>Name Surname</small>
-      </div>
-      <div class='profile'>
-        <img class='ava' src="https://robohash.org/tgsgs.png" />
-        <small>Name Surname</small>
-      </div>
-      <div class='profile'>
-        <img class='ava' src="https://robohash.org/sehfj.png" />
-        <small>Name Surname</small>
-      </div>
-    `
+    counter: ''
   }
 
   function genContent(arg) {

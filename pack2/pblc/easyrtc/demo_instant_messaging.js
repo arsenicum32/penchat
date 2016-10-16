@@ -39,9 +39,13 @@ function loginFailure(errorCode, message) {
 }
 
 function usersQuantityRender(roomName, occupants, isPrimary) {
+  items.counter = '';
   var users = 0;
   for(var easyrtcid in occupants) {
+    items.counter += '<div class="profile"><img class="ava" src="https://robohash.org/' + easyrtcid + '.png" /><small>Name Surname</small></div>';
     users++;
+  }
+  for(var i = 0; i <= users; i++) {
   }
   document.getElementById('usersQuantity').innerHTML = users;
 }
