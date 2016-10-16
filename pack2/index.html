@@ -16,11 +16,10 @@
     <script src="pblc/client/UI.js"></script>
     <script src="pblc/client/UI-events.js"></script>
     <script src="pblc/client/socket-events.js"></script>
-    <script src="pblc/client/hack.js"></script>
+    <script src="pblc/client/drop.js"></script>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/easyrtc/easyrtc.js"></script>
-    <script src="pblc/easyrtc/demo_instant_messaging.js"></script>
+    <!-- // <script src="/easyrtc/easyrtc.js"></script>
+    // <script src="pblc/easyrtc/demo_instant_messaging.js"></script> -->
 
     </head>
   <body onload="connect()">
@@ -47,10 +46,11 @@
 </div>
 <div id='logbox'></div>
 <div class='editor'></div>
-<div class='notify'>
+<!-- <div class='notify'>
   <img src="https://robohash.org/sefjkf.png">
   <small>username</small>
-</div>
+</div> -->
+<div id="dropZone"></div>
 
 <!-- <div id="drawing-mode-options" style='position: absolute; top: 0; left: 0; background: #eee'>
     <label for="drawing-mode-selector">Mode:</label>

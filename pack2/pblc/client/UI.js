@@ -70,7 +70,24 @@ $(document).ready(function(){
       </div>
     `,
     ids: 'six',
-    counter: ''
+    counter: `
+      <div class="profile">
+        <img class="ava" src="https://robohash.org/fsefsef.png" />
+        <small>Name Surname</small>
+      </div>
+      <div class="profile">
+        <img class="ava" src="https://robohash.org/fsefsef.png" />
+        <small>Name Surname</small>
+      </div>
+      <div class="profile">
+        <img class="ava" src="https://robohash.org/fsefsef.png" />
+        <small>Name Surname</small>
+      </div>
+      <div class="profile">
+        <img class="ava" src="https://robohash.org/fsefsef.png" />
+        <small>Name Surname</small>
+      </div>
+    `
   }
 
   function genContent(arg) {

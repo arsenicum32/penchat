@@ -21,6 +21,22 @@ function addObject(opt){
   return newObject;
 }
 
+function addImage(opt){
+  var imgObj = new Image();
+  imgObj.src = opt.link;
+  imgObj.onload = function () {
+      var image = new fabric.Image(imgObj);
+      image.set({
+          left: opt.left || 250,
+          top: opt.top || 250,
+          id: opt.id || canvas.uniqueID()
+      });
+      image.scale(0.5).setCoords();
+      canvas.add(image);
+  }
+  return imgObj;
+}
+
 function addText(opt){
   var options = {
     top: opt.top?parseFloat(opt.top):fabric.util.getRandomInt(0, 600),

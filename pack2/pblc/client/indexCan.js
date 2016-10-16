@@ -1,3 +1,8 @@
+var glob = {
+  offsetx: 0,
+  offsety: 0
+}
+
 $(document).ready(function(){
   canvas = new fabric.Canvas('c');
   canvas.setHeight($(window).height());
@@ -72,6 +77,9 @@ $(document).ready(function(){
         offsetY -= options.e.clientY - PRY;
         canvas.absolutePan(new fabric.Point(offsetX, offsetY));
         CAN = false;
+
+        glob.offsetx = offsetX;
+        glob.offsety = offsetY;
 
         if(mode=='text'){
           addText({text: "hello canvas!!!"});
