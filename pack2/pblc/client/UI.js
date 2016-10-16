@@ -54,9 +54,21 @@ $(document).ready(function(){
   var items = {
     file: 'test',
     edit: 'two',
-    add: 'three',
+    add: `
+      <div class='rect adder'></div>
+      <div class='circle adder'></div>
+      <div class='tri adder'></div>
+    `,
     share: 'four',
-    join: 'five',
+    join: `
+      <div class='join'>
+        <div class="avap"></div>
+        <div class="field">
+          <input class='input' placeholder='username' />
+          <input class='input' placeholder='password' />
+        </div>
+      </div>
+    `,
     ids: 'six',
     counter: `
       <div class='profile'>

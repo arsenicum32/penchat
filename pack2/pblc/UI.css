@@ -150,3 +150,48 @@ canvas {
 .profile small{
   line-height: 30px;
 }
+.join{
+  display: flex;
+}
+.join .field{
+  display: flex;
+  flex-direction: column;
+}
+.join .avap{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+  margin-right: 20px;
+}
+.join .input{
+  font-size: 1.4em;
+  border: none;
+  margin: 5px;
+  font-family: Gill Sans;
+}
+
+.rect{
+  width: 40px;
+  height: 40px;
+  background: red;
+  margin: 10px;
+}
+.circle{
+  width: 40px;
+  height: 40px;
+  background: blue;
+  border-radius: 50%;
+  margin: 10px;
+}
+.tri{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid yellow;
+  margin: 10px;
+}
+.adder{
+  cursor: pointer;
+}
