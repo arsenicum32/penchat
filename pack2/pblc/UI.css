@@ -20,7 +20,7 @@ body {
   position: fixed;
   width: 100vw;
   height: 40px;
-  background: #ccc;
+  background: #eee;
   z-index: 10;
   top: 0;
 }
@@ -42,7 +42,10 @@ body {
   line-height: 0px;
 }
 #top a:hover {
-  background: #bbb;
+  background: #eee;
+  padding: 12px;
+  margin: 8px;
+  border-radius: 20px;
 }
 #draggable {
   display: -webkit-flex;
@@ -101,7 +104,7 @@ body {
   -webkit-justify-content: center;
   width: 100vw;
   height: 20vh;
-  background: #f33;
+  background: linear-gradient(to top, #efefef, #eee);
   overflow: hidden;
   text-align: center;
 }
@@ -128,4 +131,22 @@ canvas {
 }
 .hid{
   display: none;
+}
+
+
+
+.profile{
+  display: flex;
+  flex-direction: column;
+}
+.profile .ava{
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.profile small{
+  line-height: 30px;
 }

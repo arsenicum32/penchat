@@ -52,25 +52,36 @@ $(document).ready(function(){
   });
 
   var items = {
-    file: ['export svg', 'export json', 'save', 'export json', 'save'],
-    edit: ['undo history', 'redo', 'look'],
-    windows: ['arr', 'arr'],
-    share: ['VK', 'FB', 'TW', 'INST'],
-    join: ['your Phone'],
-    ids: []
+    file: 'test',
+    edit: 'two',
+    add: 'three',
+    share: 'four',
+    join: 'five',
+    ids: 'six',
+    counter: `
+      <div class='profile'>
+        <img class='ava' src="https://robohash.org/sefjkf.png" />
+        <small>Name Surname</small>
+      </div>
+      <div class='profile'>
+        <img class='ava' src="https://robohash.org/sehfjk.png" />
+        <small>Name Surname</small>
+      </div>
+      <div class='profile'>
+        <img class='ava' src="https://robohash.org/tgsgs.png" />
+        <small>Name Surname</small>
+      </div>
+      <div class='profile'>
+        <img class='ava' src="https://robohash.org/sehfj.png" />
+        <small>Name Surname</small>
+      </div>
+    `
   }
 
   function genContent(arg) {
-    if (items[arg]) {
-      var s = '<div>';
-      for (var n in items[arg]) {
-        s += '<a id="' + items[arg][n].replace(' ', '_') + '">' + items[arg][n] + '</a>';
-      }
-      return s + '</div>';
-    } else {
-      return '';
-    }
+    return items[arg]?items[arg]:'';
   }
+
   $('#top a').on({
     'mouseover': function() {
       $('.native').hide(150);
@@ -78,6 +89,10 @@ $(document).ready(function(){
       $('#menu').html(genContent($(this).text()));
     }
   });
+
+  $('#counter').on('mouseover', function(){
+    $('#menu').html(genContent('counter'));
+  })
 
   $(function() {
     var propH = false;
