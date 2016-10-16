@@ -1,11 +1,11 @@
 var TMR = 0;
 
 setInterval(function(){
-  Math.random() > 0.995  ? addObject({}): void(0);
+  fabric.util.getRandomInt(0, 600) > 400  ? addObject({}): void(0);
   console.log(TMR);
   TMR +=1;
   fireobject(TMR);
-  Math.random() > 0.995 ? addText({text: "hello world"}) : void(0);
+  fabric.util.getRandomInt(0, 600) > 400 ? addText({text: "hello world"}) : void(0);
 }, 100);
 
 // alert('test');
