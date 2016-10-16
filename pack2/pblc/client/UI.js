@@ -76,15 +76,15 @@ $(document).ready(function(){
         <small>Name Surname</small>
       </div>
       <div class="profile">
-        <img class="ava" src="https://robohash.org/fsefsef.png" />
+        <img class="ava" src="https://robohash.org/f78797ef.png" />
         <small>Name Surname</small>
       </div>
       <div class="profile">
-        <img class="ava" src="https://robohash.org/fsefsef.png" />
+        <img class="ava" src="https://robohash.org/f68978guef.png" />
         <small>Name Surname</small>
       </div>
       <div class="profile">
-        <img class="ava" src="https://robohash.org/fsefsef.png" />
+        <img class="ava" src="https://robohash.org/789789iuhi.png" />
         <small>Name Surname</small>
       </div>
     `
