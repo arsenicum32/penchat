@@ -181,6 +181,10 @@ canvas {
   margin: 5px;
   font-family: Gill Sans;
 }
+.join small{
+  font-size: .9em;
+  opacity: .5;
+}
 
 .rect{
   width: 40px;
