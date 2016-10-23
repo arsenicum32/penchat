@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var dropZone = document.getElementById('dropZone');
+  var dropZone = document.getElementById('uploadForm');
 
   function showDropZone() {
       dropZone.style.visibility = "visible";
@@ -16,20 +16,48 @@ $(document).ready(function(){
   }
 
   function handleDrop(e) {
-      e.preventDefault();
       hideDropZone();
 
       var file = e.dataTransfer.files[0],
           reader = new FileReader();
 
       reader.onload = function (event) {
-      //  alert(event.target.result);
-        addImage({
-          link: event.target.result,
-          left: e.clientX + glob.offsetx,
-          top: e.clientY + glob.offsety
+        $('#uploadForm').ajaxForm(function(d) {
+                if(d.path){
+                  var info = d.path.split('.');
+                  switch (info[info.length  - 2]) {
+                    case 'image':
+                      addImage({
+                        link: d.path,
+                        left: e.clientX + glob.offsetx,
+                        top: e.clientY + glob.offsety
+                      })
+                      break;
+                    case 'text':
+                      $.get(d.path, function(dt){
+                        addText({
+                          text: dt,
+                          left: e.clientX + glob.offsetx,
+                          top: e.clientY + glob.offsety,
+                          fontSize: 12 / dt.split('\n').length * 5 + 3
+                        })
+                        console.log(12 / dt.split('\n').length * 5 + 3);
+                      })
+                      break;
+                    default:
+                      addObject({
+                        type: 'Circle',
+                        width: 200,
+                        height: 200,
+                        fill: 'blue',
+                        left: e.clientX + glob.offsetx,
+                        top: e.clientY + glob.offsety
+                      });
+                  }
+                }
         });
-        //holder.style.background = 'url(' + event.target.result + ') no-repeat center';
+        $('#uploadForm').submit();
+        //event.target.result  - base64 data
       };
 
       reader.readAsDataURL(file);
@@ -50,7 +78,9 @@ $(document).ready(function(){
 
   // 3
   dropZone.addEventListener('dragleave', function(e) {
+    setTimeout(function(){
       hideDropZone();
+    }, 2000)
   });
 
   // 4

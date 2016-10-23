@@ -44,6 +44,13 @@ fabric.Canvas.prototype.uniqueID = function(){
         '-' + chr4() + chr4() + chr4();
   };
 
+fabric.Canvas.prototype.getAbsoluteCoords = function(object) {
+    return {
+      left: object.left + this._offset.left,
+      top: object.top + this._offset.top
+    };
+}
+
 fabric.Object.prototype.toObject = (function (toObject) {
       return function () {
         var color = ['blue','red','yellow','hotpink'][Math.floor(Math.random()*4)];

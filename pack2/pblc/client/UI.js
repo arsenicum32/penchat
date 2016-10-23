@@ -52,14 +52,14 @@ $(document).ready(function(){
   });
 
   items = {
-    file: 'test',
-    edit: 'two',
+    file: '<h2>no files uploaded</h2>',
+    edit: 'join or login (╯°□°）╯︵ ┻━┻',
     add: `
       <div class='rect adder' onclick='addObject({type: "Rect"})'></div>
       <div class='circle adder' onclick='addObject({type: "Circle"})'></div>
       <div class='tri adder' onclick='addObject({type: "Triangle"})'></div>
     `,
-    share: 'four',
+    share: 'join or login ( ͡° ͜ʖ ͡°)',
     join: `
       <div class='join'>
         <img class="avap" id='im' src='https://robohash.org/f78797ef.png' />
@@ -76,24 +76,7 @@ $(document).ready(function(){
       </div>
     `,
     ids: 'six',
-    counter: `
-      <div class="profile">
-        <img class="ava" src="https://robohash.org/fsefsef.png" />
-        <small>Name Surname</small>
-      </div>
-      <div class="profile">
-        <img class="ava" src="https://robohash.org/f78797ef.png" />
-        <small>Name Surname</small>
-      </div>
-      <div class="profile">
-        <img class="ava" src="https://robohash.org/f68978guef.png" />
-        <small>Name Surname</small>
-      </div>
-      <div class="profile">
-        <img class="ava" src="https://robohash.org/789789iuhi.png" />
-        <small>Name Surname</small>
-      </div>
-    `
+    counter: '<h2>no users founds</h2>'
   }
 
   function genContent(arg) {
@@ -130,7 +113,20 @@ $(document).ready(function(){
     $("#help").draggable({
       containment: "body"
     });
+    $("#tool").draggable({
+      containment: "body"
+    });
   });
+
+  $('#tool textarea').on('input', function(){
+    if(
+      IsJson($(this).val())
+    ){
+      var o = JSON.parse($(this).val());
+      objEdit(o);
+      canvas.renderAll();
+    }
+  })
 
   function adaptatenative(el,propH) {
     $(el).css('opacity', 1);
@@ -145,6 +141,15 @@ $(document).ready(function(){
     }
   }
   adaptatenative("#draggable",'go');
+
+  function IsJson(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+  }
 
   // canvas.on('after:render',function(){
   //   var g = parseInt($('#counter span').text()) + 1;

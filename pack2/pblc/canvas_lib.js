@@ -41,8 +41,9 @@ function addText(opt){
   var options = {
     top: opt.top?parseFloat(opt.top):fabric.util.getRandomInt(0, 600),
     left: opt.left?parseFloat(opt.left):fabric.util.getRandomInt(0, 600),
-    fill: opt.fill || 'black',
+    fill: opt.fill || ['hotpink', 'gold', 'blue','black','red'][fabric.util.getRandomInt(0, 3)],
     fontFamily: opt.fontFamily || 'Gill Sans',
+    fontSize: opt.fontSize || fabric.util.getRandomInt(8, 120),
     id: opt.id || canvas.uniqueID(),
     name: opt.name || canvas.uniqueID()
   };

@@ -1,0 +1,4 @@
+<form id="uploadForm" action="http://localhost:8000/upload" method="post" enctype="multipart/form-data" style="visibility: hidden;">
+          <input type="file" id="file" name="sampleFile" style="width:100vw;height: 100vh;z-index: 100000000">
+          <input type="submit" value="Upload!">
+</form>

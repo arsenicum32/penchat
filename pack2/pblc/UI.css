@@ -124,7 +124,7 @@ body {
 #dialog button {
   color: #f00;
 }
-div#dropZone {
+form {
   background: gray;
   position: fixed;
   top: 0;

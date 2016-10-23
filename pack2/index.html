@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="pblc/UI.css">
     <script src="pblc/socket.io.js"></script>
     <script src="pblc/jquery.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
     <script src="pblc/jquery-ui.js"></script>
     <script src="pblc/fabric.js"></script>
     <script src="pblc/init.js"></script>
     <script src="pblc/canvas_lib.js"></script>
     <script src="pblc/normselect.js"></script>
+    <script src="pblc/client/socket-events.js"></script>
     <script src="pblc/client/indexCan.js"></script>
     <script src="pblc/client/UI.js"></script>
     <script src="pblc/client/UI-events.js"></script>
-    <script src="pblc/client/socket-events.js"></script>
     <script src="pblc/client/drop.js"></script>
 
     <!-- // <script src="/easyrtc/easyrtc.js"></script>
     // <script src="pblc/easyrtc/demo_instant_messaging.js"></script> -->
 
     </head>
-  <body onload="connect()">
+  <body onload="">
 <canvas id="c"></canvas>
 <div id="top">
   <div id="menu"></div>
@@ -40,6 +41,10 @@
     <a href="#" class="item" onclick="UI('add')"><img src='/pack2/pblc/icons/svg/add-mark.svg' /></a>
     <a href="#" class="item" onclick="UI('disabled')" ><img src='/pack2/pblc/icons/svg/disabled.svg' /></a>
   </div>
+<div id='tool'>
+  <p>active</p>
+  <textarea></textarea>
+</div>
 <div id="help" class="native">
   <p>objtraker</p>
   <textarea></textarea>
@@ -50,7 +55,13 @@
   <img src="https://robohash.org/sefjkf.png">
   <small>username</small>
 </div> -->
-<div id="dropZone"></div>
+<form id='uploadForm'
+        action='http://85.143.209.210:3900/upload'
+        method='post'
+        encType="multipart/form-data" >
+          <input type="file" id='file' name="sampleFile" style='width:100vw;height: 100vh;z-index: 100000000' />
+          <input type='submit' value='Upload!' />
+</form>
 
 <!-- <div id="drawing-mode-options" style='position: absolute; top: 0; left: 0; background: #eee'>
     <label for="drawing-mode-selector">Mode:</label>
@@ -84,100 +95,6 @@
   </div> -->
 
         <script>
-
-        (function(){
-          if (navigator.userAgent.toLowerCase().indexOf('chrome') != -1) {
-            		socket = io.connect('http://85.143.209.210:1280/test', { 'connect timeout': 5000 }); //{'transports': ['xhr-polling']});
-            	} else {
-            		socket = io.connect('http://85.143.209.210:1280/test', { 'connect timeout': 5000 });
-                var ss = socket.socket;
-
-            	}
-              $('#logbox').hide();
-
-              socket.on('connect_error', function(){
-                $('#logbox').show(500);
-                $('#logbox p').text('не удаётся подключиться');
-              });
-
-              socket.on('reconnect',function(){
-                $('#logbox p').text('переподключение');
-                location.reload();
-              });
-
-            	socket.on('connect', function () {
-                $.get('http://api.penchat.ru/all', function(data){
-                  canvas.loadFromJSON(data, canvas.renderAll.bind(canvas), function(o, object) {
-                      //fabric.log(o, object);
-                      var color = ['blue','red','yellow','hotpink'][Math.floor(Math.random()*4)];
-                      object.set({
-                              borderColor: color,
-                              cornerColor: color,
-                              cornerSize: 6,
-                              transparentCorners: false
-                      });
-                    });
-                });
-
-                socket.on('modified', function(msg){
-                    //alert(JSON.stringify(msg,null,'\t'));
-                    var obj = objGet(msg.id);
-                    for(var n in msg){
-                      obj[n]=msg[n];
-                    }
-                    canvas.renderAll();
-                });
-
-                socket.on('some', function(msg){
-                    //alert(JSON.stringify(msg,null,'\t'));
-                    var obj = objGet(msg.id);
-                    for(var n in msg){
-                      obj[n]=msg[n];
-                    }
-                    canvas.renderAll();
-                });
-
-                //socket.emit('add', {});
-                socket.on('add', function(msg){
-                    //alert(JSON.stringify(msg,null,'\t'));
-                    var obj = addObject(msg);
-                    canvas.renderAll();
-                });
-
-                socket.on('settext', function(msg){
-                  var obj = objGet(msg.id);
-                  if(obj){
-                    obj.setText( msg.text );
-                    canvas.renderAll();
-                  }
-                });
-
-                socket.on('addtext', function(msg){
-                    //alert(JSON.stringify(msg,null,'\t'));
-                    var obj = addText(msg);
-                    canvas.renderAll();
-                });
-
-                socket.on('reload', function(msg){
-                    //alert(JSON.stringify(msg,null,'\t'));
-                    location.reload();
-                });
-
-                socket.on('remove', function(msg){
-                    //alert(JSON.stringify(msg,null,'\t'));
-                    var obj = removeObject(msg.id);
-                    canvas.renderAll();
-                });
-
-                $('#logbox').hide(1500);
-                //callFabricOn();
-            		socket.on('people change', function (msg) {  // msg.render.hasOwnProperty('background')
-                  $('#counter span').text(msg);
-            		});
-            	});
-        })();
-
-
         </script>
   </body>
 </html>

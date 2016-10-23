@@ -59,8 +59,13 @@ $(document).ready(function(){
       if (options.target) {
         //options.target.opacity = 0.5;
         canvas.renderAll();
-      };
+        $('#tool').show();
+        $('#tool').css('left', options.e.clientX + 'px');
+        $('#tool').css('top', options.e.clientY + 'px');
+        $('#tool textarea').val(JSON.stringify(options.target,null,'\t'));
+      }
       if (canvas.getActiveObject() == null && mode != 'pen') {
+        $('#tool').hide();
         PRX = options.e.clientX;
         PRY = options.e.clientY;
         CAN = true;
@@ -93,30 +98,40 @@ $(document).ready(function(){
       }
     },
     'object:moving': function(e) {
-      socket.emit('some', {id: e.target.id, left: e.target.left, top: e.target.top} );
+      sock.change( {
+        id: e.target.id,
+        name: e.target.name,
+        left: e.target.left,
+        top: e.target.top,
+        originX: e.target.originX,
+        originY: e.target.originY
+      } );
+      $('#tool textarea').val(JSON.stringify(e.target,null,'\t'));
     },
     'object:scaling': function(e){
-      socket.emit('some',
-                {id: e.target.id,
-                scaleX: e.target.scaleX ,
-                scaleY: e.target.scaleY ,
-                originX: e.target.originX,
-                originY: e.target.originY,
-                flipX: e.target.flipX,
-                flipY: e.target.flipY
-              });
+      sock.change( {
+        id: e.target.id,
+        name: e.target.name,
+        scaleX: e.target.scaleX,
+        scaleY: e.target.scaleY,
+        originX: e.target.originX,
+        originY: e.target.originY
+      } );
+      $('#tool textarea').val(JSON.stringify(e.target,null,'\t'));
     },
     'object:rotating':function(e){
-      socket.emit('some',
-                {id: e.target.id,
-                angle: e.target.angle,
-                originX: e.target.originX,
-                originY: e.target.originY
-              });
+      sock.change(  {
+        id: e.target.id,
+        name: e.target.name,
+        angle: e.target.angle,
+        originX: e.target.originX,
+        originY: e.target.originY
+      } );
+      $('#tool textarea').val(JSON.stringify(e.target,null,'\t'));
     },
     'object:modified': function(e) {
-      //e.target.opacity = 1;
-      socket.emit('modified', e.target);
+      sock.change( e.target );
+      $('#tool textarea').val(JSON.stringify(e.target,null,'\t'));
     },
     'mouse:over': function(e) {
       canvas.renderAll();
@@ -159,22 +174,11 @@ $(document).ready(function(){
   // "add" rectangle onto canvas
   //fabric.Object.prototype.transparentCorners = false;
   // add random objects
-  for (var i = 15; i--;) {
-    var dim = fabric.util.getRandomInt(30, 60);
-    var klass = ['Rect', 'Triangle', 'Circle'][fabric.util.getRandomInt(0, 2)];
-    var options = {
-      top: fabric.util.getRandomInt(0, 600),
-      left: fabric.util.getRandomInt(0, 600),
-      fill: ['pink', 'yellow', 'hotpink'][fabric.util.getRandomInt(0, 2)]
-    };
-    if (klass === 'Circle') {
-      options.radius = dim;
-    } else {
-      options.width = dim;
-      options.height = dim;
-    }
-    canvas.add(new fabric[klass](options));
-  }
+  // for (var i = 15; i--;) {
+  //     //sock.add(
+  //       addObject({})
+  //     //);
+  // }
   //canvas.item(0).lockRotation = true;
   //canvas.item(0).lockScalingX = canvas.item(0).lockScalingY = true;
   // for (var n = 0; n < canvas.getObjects().length; n++) {
@@ -183,17 +187,17 @@ $(document).ready(function(){
   // canvas.renderAll();
 
   canvas.on('mouse:move',function(){
-    $('textarea').val(JSON.stringify( canvas.toJSON(), null, ' '));
+    $('#help textarea').val(JSON.stringify( canvas.toJSON(), null, ' '));
   });
 
-  var CashArea = $('textarea').val();
+  var CashArea = $('#help textarea').val();
 
-  $('textarea').val(JSON.stringify( canvas.toJSON(), null, ' '));
-  var CashArea = JSON.parse($('textarea').val());
+  $('#help textarea').val(JSON.stringify( canvas.toJSON(), null, ' '));
+  var CashArea = JSON.parse($('#help textarea').val());
 
   setInterval(function(){
     try{
-      CashArea = JSON.parse($('textarea').val());
+      CashArea = JSON.parse($('#help textarea').val());
     } catch(e){
 
     } finally{
@@ -201,7 +205,7 @@ $(document).ready(function(){
     }
   },200);
 
-  $('textarea').on('input', function(){
+  $('#help textarea').on('input', function(){
     try{
       var parse = JSON.parse($(this).val());
       for (var n in parse){
