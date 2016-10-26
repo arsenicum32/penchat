@@ -1,4 +1,12 @@
 function addObject(opt){
+  if(opt.type =='Image' ){
+    addImage(opt);
+    return;
+  }
+  if(opt.type =='Text' ){
+    addText(opt);
+    return;
+  }
   var dim = parseFloat(opt.size) || fabric.util.getRandomInt(30, 60);
   var klass = opt.type || ['Rect', 'Triangle', 'Circle'][fabric.util.getRandomInt(0, 2)];
   var options = {
@@ -21,9 +29,9 @@ function addObject(opt){
   return newObject;
 }
 
-function addImage(opt){
+function addImage(opt, callback){
   var imgObj = new Image();
-  imgObj.src = opt.link;
+  imgObj.src = opt.link?opt.link:opt.src;
   imgObj.onload = function () {
       var image = new fabric.Image(imgObj);
       image.set({
@@ -33,6 +41,7 @@ function addImage(opt){
       });
       image.scale(0.5).setCoords();
       canvas.add(image);
+      callback?callback(image):void(0);
   }
   return imgObj;
 }

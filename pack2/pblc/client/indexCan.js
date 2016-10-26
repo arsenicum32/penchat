@@ -47,6 +47,11 @@ $(document).ready(function(){
   var offsetX = 0; //-canvas.getWidth()/2;
   var offsetY = 0; //-canvas.getHeight()/2;
   //canvas.absolutePan(new fabric.Point(offsetX, offsetY));
+  if(router){
+    glob.offsetx = offsetX = router.get().offsetx || 0;
+    glob.offsety = offsetY = router.get().offsety || 0;
+    canvas.absolutePan(new fabric.Point(glob.offsetx, glob.offsety));
+  }
 
   var PRX, PRY;
   var CAN = false;
@@ -60,8 +65,8 @@ $(document).ready(function(){
         //options.target.opacity = 0.5;
         canvas.renderAll();
         $('#tool').show();
-        $('#tool').css('left', options.e.clientX + 'px');
-        $('#tool').css('top', options.e.clientY + 'px');
+        $('#tool').css('left', (router.get().toolX || options.e.clientX) + 'px');
+        $('#tool').css('top', (router.get().toolY || options.e.clientY) + 'px');
         $('#tool textarea').val(JSON.stringify(options.target,null,'\t'));
       }
       if (canvas.getActiveObject() == null && mode != 'pen') {
@@ -90,6 +95,10 @@ $(document).ready(function(){
           addText({text: "hello canvas!!!"});
         }
       }
+
+      /////ROUTER
+      router.put(glob)
+      ///////////
     },
     'mouse:move': function(options) {
       normselect();
@@ -152,6 +161,7 @@ $(document).ready(function(){
               canvas.getActiveObject()?canvas.getActiveObject().setText( canvas.getActiveObject().text.slice(0, -1) ):void(0);
               //socket.emit('settext', {id: canvas.getActiveObject().id , text: 'sef' });
             }else{
+              sock.rem(item);
               item.remove();
             }
           }else{

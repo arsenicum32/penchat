@@ -31,7 +31,7 @@ $(document).ready(function(){
                         link: d.path,
                         left: e.clientX + glob.offsetx,
                         top: e.clientY + glob.offsety
-                      })
+                      }, function(o){ sock.add(o); })
                       break;
                     case 'text':
                       $.get(d.path, function(dt){

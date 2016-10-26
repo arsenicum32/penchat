@@ -4,27 +4,43 @@ String.prototype.capitalize = function() {
 
 var sock = {
   name: 0,
+  room: 'test',
+  changeroom: function(room){
+    socket.emit('leave', this.room);
+    this.room = room;
+    socket.emit('join', room);
+    $.get(serverAddr+ '/api/'+this.room+'/get/canvas',function(data){
+      //canvas.clear();
+      canvas.loadFromJSON(data);
+      console.log('data c:' + data);
+      canvas.renderAll();
+    });
+  },
   change: function(o){
-    socket.emit('snd',{room:'test', userseed: this.name , obj: o});
+    socket.emit('snd',{room: this.room , userseed: this.name , obj: o});
   },
   add: function(o){
     o.type ? o.type = o.type.capitalize() : void(0);
-    socket.emit('snd',{room:'test', userseed: this.name , add: o});
+    socket.emit('snd',{room: this.room , userseed: this.name , add: o});
   },
   rem: function(o){
     o.id ? void(0) : o.id = o.name;
-    socket.emit('snd', {room:'test', userseed: this.name , rem: o});
+    socket.emit('snd', {room: this.room , userseed: this.name , rem: o});
   }
 }
 
 $(document).ready(function(){
-
+  router.get().canvas ?
+  sock.room = router.get().canvas:
+  void(0);
+  serverAddr = 'http://localhost:9000';//'http://85.143.209.210';
+  socketAddr = 'http://localhost:1280';
   (function(){
     if (navigator.userAgent.toLowerCase().indexOf('chrome') != -1) {
       //85.143.209.210
-          socket = io.connect('http://localhost:1280', { 'connect timeout': 5000 }); //{'transports': ['xhr-polling']});
+          socket = io.connect(socketAddr, { 'connect timeout': 5000 }); //{'transports': ['xhr-polling']});
         } else {
-          socket = io.connect('http://localhost:1280', { 'connect timeout': 5000 });
+          socket = io.connect(socketAddr, { 'connect timeout': 5000 });
           var ss = socket.socket;
 
         }
@@ -40,9 +56,9 @@ $(document).ready(function(){
         });
 
         socket.on('connect', function () {
-          socket.emit('join', 'test');
+          socket.emit('join', sock.room );
 
-          $.get('http://localhost:9000/testdata',function(data){
+          $.get(serverAddr+ '/api/'+sock.room+'/get/canvas',function(data){
             canvas.loadFromJSON(data);
             canvas.renderAll();
           });

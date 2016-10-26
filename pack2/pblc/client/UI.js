@@ -2,6 +2,7 @@ $(document).ready(function(){
   $('#draggable').css('top', '120px');
   $('#draggable').css('left', '10px');
   $('#menu').hide();
+  $('#tool').hide();
   $('#help').css('top', $(window).height() - $('#help').height());
   $('#help').css('left', $(window).width() - $('#help').width());
 
@@ -10,6 +11,7 @@ $(document).ready(function(){
     if ((e.pageY - 40) / $(window).height() > 0.2) {
       $('#menu').hide(150);
       $('.native').show(150);
+      if(canvas.getActiveObject()) $('#tool').show(150);
     }
   });
 
@@ -86,6 +88,7 @@ $(document).ready(function(){
   $('#top a').on({
     'mouseover': function() {
       $('.native').hide(150);
+      $('#tool').hide(150);
       $('#menu').show(150);
       $('#menu').html(genContent($(this).text()));
     }
@@ -114,7 +117,10 @@ $(document).ready(function(){
       containment: "body"
     });
     $("#tool").draggable({
-      containment: "body"
+      containment: "body",
+      stop: function(){
+        router.put( { toolX: $(this).css('left'), toolY: $(this).css('top')} );
+      }
     });
   });
 
@@ -150,11 +156,4 @@ $(document).ready(function(){
     }
     return true;
   }
-
-  // canvas.on('after:render',function(){
-  //   var g = parseInt($('#counter span').text()) + 1;
-  //   $('#counter span').text(g);
-  // });
-
-  //normselect();
 });

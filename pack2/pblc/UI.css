@@ -124,6 +124,28 @@ body {
 #dialog button {
   color: #f00;
 }
+#tool{
+  position: absolute;
+  top: 60px;
+  left: calc(100% - 200px);
+  width: 180px;
+  height: 210px;
+  background: #eee;
+  z-index: 1000;
+}
+#tool p{
+  margin: auto;
+  margin-top: 2px;
+  text-align: center;
+}
+#tool textarea{
+  width: 98%;
+  margin: auto;
+  height: 80%;
+  resize: none;
+  font-family: Gill Sans;
+  border: none;
+}
 form {
   background: gray;
   position: fixed;
@@ -157,6 +179,9 @@ canvas {
   border-radius: 50%;
   margin-left: 15px;
   margin-right: 15px;
+}
+.profile .me{
+  border: 2px solid lightgreen;
 }
 .profile small{
   line-height: 30px;
