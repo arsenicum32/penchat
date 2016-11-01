@@ -50,10 +50,10 @@ module.exports = {
     //.border(20, 20)
     //.borderColor('red')
     //.rotate('green', -25) поворот изображения и цвет подложки
-    //.resize(700, 700)
+    .resize(100, 100, '>')
     //.region(101, 112, 90, 87) скручивание
     //.swirl(200)
-    .autoOrient()
+    //.autoOrient()
     .write( name , function (err) {
       err?callback(err):callback(name);
     });
