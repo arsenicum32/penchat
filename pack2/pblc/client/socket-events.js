@@ -33,8 +33,8 @@ $(document).ready(function(){
   router.get().canvas ?
   sock.room = router.get().canvas:
   void(0);
-  serverAddr = 'www.sliceofring.ru';//'http://localhost:9000';//'http://85.143.209.210';
-  socketAddr = 'ws.sliceofring.ru';//'http://localhost:1280';
+  serverAddr = '9000.sliceofring.ru';//'http://localhost:9000';//'http://85.143.209.210';
+  socketAddr = '1280.sliceofring.ru';//'http://localhost:1280';
   (function(){
     if (navigator.userAgent.toLowerCase().indexOf('chrome') != -1) {
       //85.143.209.210
