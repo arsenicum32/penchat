@@ -97,6 +97,13 @@ body {
   float: center;
   font-family: Gill Sans;
 }
+.joinhelp{
+  color: blue;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
 #menu {
   display: -webkit-flex;
   -webkit-flex-wrap: column;
@@ -162,6 +169,11 @@ canvas {
   top: 0;
   left: 0;
 }
+
+input {
+  outline: none;
+}
+
 .hid{
   display: none;
 }
@@ -200,7 +212,7 @@ canvas {
   background: white;
   margin-right: 20px;
 }
-.join .input{
+.input{
   font-size: 1.4em;
   border: none;
   margin: 5px;

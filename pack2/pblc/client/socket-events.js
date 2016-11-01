@@ -5,15 +5,15 @@ String.prototype.capitalize = function() {
 var sock = {
   name: 0,
   room: 'test',
-  changeroom: function(room){
+  changeroom: function(room, callback){
     socket.emit('leave', this.room);
     this.room = room;
     socket.emit('join', room);
     $.get(serverAddr+ '/api/'+this.room+'/get/canvas',function(data){
-      //canvas.clear();
-      canvas.loadFromJSON(data);
-      console.log('data c:' + data);
-      canvas.renderAll();
+      canvas.loadFromJSON(data,function() {
+        callback?callback():void(0);
+        canvas.renderAll();
+      });
     });
   },
   change: function(o){
@@ -33,8 +33,8 @@ $(document).ready(function(){
   router.get().canvas ?
   sock.room = router.get().canvas:
   void(0);
-  serverAddr = 'http://localhost:9000';//'http://85.143.209.210';
-  socketAddr = 'http://localhost:1280';
+  serverAddr = 'www.sliceofring.ru';//'http://localhost:9000';//'http://85.143.209.210';
+  socketAddr = 'ws.sliceofring.ru';//'http://localhost:1280';
   (function(){
     if (navigator.userAgent.toLowerCase().indexOf('chrome') != -1) {
       //85.143.209.210
@@ -44,7 +44,6 @@ $(document).ready(function(){
           var ss = socket.socket;
 
         }
-        //$('#logbox').hide();
 
         socket.on('connect_error', function(){
           addText({text:`connect server error ¯\(°_o)/¯`});
@@ -97,8 +96,6 @@ $(document).ready(function(){
               canvas.renderAll();
             }
           })
-
-          //socket.emit('snd', {foo:'bar',room:'test',message:'hello'})
 
           $('#logbox').hide(1500);
           //callFabricOn();

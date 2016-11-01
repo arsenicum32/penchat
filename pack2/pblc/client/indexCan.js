@@ -107,6 +107,7 @@ $(document).ready(function(){
       }
     },
     'object:moving': function(e) {
+
       sock.change( {
         id: e.target.id,
         name: e.target.name,

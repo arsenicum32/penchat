@@ -57,9 +57,9 @@ $(document).ready(function(){
     file: '<h2>no files uploaded</h2>',
     edit: 'join or login (╯°□°）╯︵ ┻━┻',
     add: `
-      <div class='rect adder' onclick='addObject({type: "Rect"})'></div>
-      <div class='circle adder' onclick='addObject({type: "Circle"})'></div>
-      <div class='tri adder' onclick='addObject({type: "Triangle"})'></div>
+      <div class='rect adder' onclick='sock.add(addObject({type: "Rect"}))'></div>
+      <div class='circle adder' onclick='sock.add(addObject({type: "Circle"}))'></div>
+      <div class='tri adder' onclick='sock.add(addObject({type: "Triangle"}))'></div>
     `,
     share: 'join or login ( ͡° ͜ʖ ͡°)',
     join: `
@@ -67,13 +67,9 @@ $(document).ready(function(){
         <img class="avap" id='im' src='https://robohash.org/f78797ef.png' />
         <div class="field">
           <input class='input' id='in' placeholder='username' />
-          <input class='input' placeholder='password' />
+          <input class='input' id='password' type='password' placeholder='password' />
           <small>type enter to continue ↩︎ </small>
-          <script>
-              $('#in').on('input', function(){
-                $('#im').attr('src', 'https://robohash.org/' + $(this).val() + '.png')
-              })
-          </script>
+          <script src='pblc/client/login.js'></script>
         </div>
       </div>
     `,
