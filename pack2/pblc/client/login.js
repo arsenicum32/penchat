@@ -52,7 +52,7 @@ $('.join').on('keypress', function(e){
                 <div>
                   <a class='joinhelp' href='#'>пробовать ещё!!</a>
                   ${
-                    !usr? "<a class='joinhelp' href='#' onclick='bthf.join()'>да я здесь впервые!!</a>": ""
+                    !usr.user? "<a class='joinhelp' href='#' onclick='bthf.join()'>да я здесь впервые!!</a>": ""
                   }
                 </div>
               </div>
