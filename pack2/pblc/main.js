@@ -1,4 +1,4 @@
 main = {
-  url: 'http://localhost:9000',
+  url: 'http://9000.sliceofring.ru',
   user: undefined
 }
