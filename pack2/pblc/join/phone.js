@@ -27,7 +27,7 @@ $('#phone').on('keyup', function(e){
 })
 
 $('#phone').on('input', function(e){
-  $.get('http://localhost:9000/auth/phone?p=' + $(this).val() , function(d){
+  $.get(main.url + '/auth/phone?p=' + $(this).val() , function(d){
     if(d[1] == true){
       $('#phone').css('border' , '2px solid lightgreen')
     }else if(d[1] == false){
