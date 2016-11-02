@@ -43,17 +43,21 @@ $('.join').on('keypress', function(e){
         if(d.error){
           var html = $('.join').html();
 
-          $('#menu').html(`
-            <div>
-              <p>пишет, что:
-              <small>${d.error}</small>
-              </p>
+          $.get( 'http://localhost:9000/auth/exist/' + user.name , function(usr){
+            $('#menu').html(`
               <div>
-                <a class='joinhelp' href='#'>пробовать ещё!!</a>
-                <a class='joinhelp' href='#' onclick='bthf.join()'>да я здесь впервые!!</a>
+                <p>пишет, что:
+                <small>${d.error}</small>
+                </p>
+                <div>
+                  <a class='joinhelp' href='#'>пробовать ещё!!</a>
+                  ${
+                    !usr? "<a class='joinhelp' href='#' onclick='bthf.join()'>да я здесь впервые!!</a>": ""
+                  }
+                </div>
               </div>
-            </div>
-          `);
+            `);
+          })
         }
         if(d.sucsess){
           $('.join').html(d.sucsess);
