@@ -59,7 +59,13 @@ app.get('/testdata', function(req,res){
 })
 
 app.get('/', function(req,res,next){
-  res.render('index');
+  require('request').get('http://project77128.tilda.ws/slice', function(err,rs,body){
+    $ = require('cheerio').load(body);
+    $('#tildacopy').remove();
+    $('body').prepend('<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40957384 = new Ya.Metrika({ id:40957384, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40957384" style="position:absolute; left:-9999px;" alt="" /></div></noscript>');
+    res.send($.html());
+  })
+  //res.render('index');
 });
 
 app.listen(9000, function () {
