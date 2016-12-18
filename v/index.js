@@ -54,8 +54,11 @@ var sock = {
     this.room = room;
     socket.emit('join', room);
   },
-  event: function(o){
-    socket.emit('snd',{room: this.room , userseed: this.name , obj: o});
+  left: function(o, m){
+    socket.emit('snd',{room: this.room , userseed: this.name , o: o, m: m , type: false });
+  },
+  right: function(o, m){
+    socket.emit('snd',{room: this.room , userseed: this.name , o: o, m: m , type: true});
   }
 }
 
@@ -67,16 +70,18 @@ if (navigator.userAgent.toLowerCase().indexOf('chrome') != -1) {
 }
 
 socket.on('res', function(msg){
-  var newM = document.createElement('div');
-  newM.className = 'mes';
-  newM.innerHTML = '<p>' + msg.obj + '</p>';
-  document.getElementById('mesl').appendChild(newM);
+  var newM = document.createElement('div'),
+  block = document.getElementById( msg.type? 'mesr' : 'mesl' );
+  newM.className = msg.type? 'mesr' : 'mes';
+  newM.innerHTML = '<small>от <a href="#">' + msg.o + '</a></small><p>' + msg.m + '</p>';
+  block.appendChild(newM);
+  block.scrollTop = block.scrollHeight;
   console.log(msg);
 })
 
 socket.on('connect', function () {
   socket.emit('join', sock.room );
   setInterval(function(){
-    sock.event(Math.random());
+    sock.left('hey',Math.random());
   }, 1000)
 })
