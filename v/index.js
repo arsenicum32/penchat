@@ -44,7 +44,7 @@ function startTimer() {
   }
 
 
-var socketAddr = '//9000.sliceofring.ru';
+var socketAddr = '//1280.sliceofring.ru';
 
 var sock = {
   name: 0,
