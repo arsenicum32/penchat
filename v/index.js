@@ -54,11 +54,8 @@ var sock = {
     this.room = room;
     socket.emit('join', room);
   },
-  left: function(o, m){
-    socket.emit('snd',{room: this.room , userseed: this.name , o: o, m: m , type: false });
-  },
-  right: function(o, m){
-    socket.emit('snd',{room: this.room , userseed: this.name , o: o, m: m , type: true});
+  mes: function(o, m, left){
+    socket.emit('snd',{room: this.room , userseed: this.name , o: o, m: m , type: left });
   }
 }
 
@@ -82,6 +79,6 @@ socket.on('res', function(msg){
 socket.on('connect', function () {
   socket.emit('join', sock.room );
   setInterval(function(){
-    sock.left('hey',Math.random());
+    sock.mes('hey',Math.random() , chance.bool() );
   }, 1000)
 })
