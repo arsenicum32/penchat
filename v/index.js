@@ -27,3 +27,18 @@ function startTimer() {
   }
 
   startTimer()
+
+  function auth(){
+    VK.Auth.login(function(response) {
+      if (response.session) {
+        console.log(
+          response.session
+        );
+        if (response.settings) {
+          /* Выбранные настройки доступа пользователя, если они были запрошены */
+        }
+      } else {
+        /* Пользователь нажал кнопку Отмена в окне авторизации */
+      }
+    });
+  }
