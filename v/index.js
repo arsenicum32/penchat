@@ -42,3 +42,37 @@ function startTimer() {
       }
     });
   }
+
+
+var socketAddr = 'http://9000.sliceofring.ru';
+
+var sock = {
+  name: 0,
+  room: 'slice',
+  changeroom: function(room, callback){
+    socket.emit('leave', this.room);
+    this.room = room;
+    socket.emit('join', room);
+  },
+  event: function(o){
+    socket.emit('snd',{room: this.room , userseed: this.name , obj: o});
+  }
+}
+
+if (navigator.userAgent.toLowerCase().indexOf('chrome') != -1) {
+  socket = io.connect(socketAddr, { 'connect timeout': 5000 }); //{'transports': ['xhr-polling']});
+} else {
+  socket = io.connect(socketAddr, { 'connect timeout': 5000 });
+  var ss = socket.socket;
+}
+
+socket.on('res', function(msg){
+  console.log(msg);
+})
+
+socket.on('connect', function () {
+  socket.emit('join', sock.room );
+  setInterval(function(){
+    sock.event(Math.random());
+  }, 1000)
+})
