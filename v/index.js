@@ -67,6 +67,10 @@ if (navigator.userAgent.toLowerCase().indexOf('chrome') != -1) {
 }
 
 socket.on('res', function(msg){
+  var newM = document.createElement('div');
+  newM.className = 'mes';
+  newM.innerHTML = '<p>' + msg.obj + '</p>';
+  document.getElementById('mesl').appendChild(newM);
   console.log(msg);
 })
 
