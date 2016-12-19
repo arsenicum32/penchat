@@ -1,26 +1,40 @@
-<!DOCTYPE html>
 <html >
   <head>
     <meta charset="UTF-8">
+    <title>penchat promo</title>
+        <link rel="stylesheet" href="css/style.css">
     <title>slice</title>
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
   </head>
 
   <body>
-    <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41215589 = new Ya.Metrika({ id:41215589, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script>
+    <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41215589 = new Ya.Metrika({ id:41215589, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
+    <canvas id='c'></canvas>
+    <mouse>
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 viewBox="0 -40 40 120" style="enable-background:new 0 0 40 60;" xml:space="preserve">
+      <style type="text/css">
+      	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+      	.st1{fill:#000;stroke:#000000;stroke-miterlimit:10;}
+        .st2{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+      </style>
+      <path class="st2" d="M20,1.6c0,0-8.2-20.1,0-20.1c7.5,0,10.1-16.6,0.9-17.1"/>
+      <path class="st0" d="M23.3,58.4h-6.6c-8.6,0-15.6-7-15.6-15.6V17.2c0-8.6,7-15.6,15.6-15.6h6.6c8.6,0,15.6,7,15.6,15.6v25.6C38.9,51.4,31.9,58.4,23.3,58.4z"/>
+      <circle class="st1" cx="20" cy="14" r="2.5">
+        <animate attributeType="XML" attributeName="cy" from="10" to="20"
+                       dur="1s"
+                       repeatCount="indefinite"/>
+    </svg>
+    </mouse>
 
-    <script type="text/javascript">
-      VK.init({apiId: 5782432});
-    </script>
-
-    <!-- Put this div tag to the place, where Auth block will be -->
-    <div id="vk_auth"></div>
-    <script type="text/javascript">
-    VK.Widgets.Auth("vk_auth", {width: "200px", onAuth: function(data) {
-     alert('user '+data['uid']+' authorized');
-    } });
-    </script>
-
-    <button onclick="VK.Auth.login()">login</button>
+    <script src='js/fabric.min.js'></script>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/logo.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/normselect.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/DOMevent.js"></script>
   </body>
 </html>

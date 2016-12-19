@@ -17,7 +17,7 @@ function loadContent(){
       canvas.add(text);
   })();
   (function(){
-    var arr = ['причин','дружить','с penchat'];
+    var arr = ['reasons', 'to be friends', 'with penchat'];
     for(var i in arr){
       var text = new fabric.Text(arr[i], {
           fontSize: 15,
@@ -36,7 +36,7 @@ function loadContent(){
     }
   })();
   (function(){
-    var text = new fabric.Text('мы переизобрели\nсоциальную сеть!', {
+    var text = new fabric.Text('We re-invented\nthe social network!', {
         fontSize: 15,
         backgroundColor: 'black',
         fill: 'white',
@@ -121,10 +121,10 @@ function loadContent(){
       canvas.add(group);
   }
   (function(){
-    screen(1000,1000,1," ведение проектной \n и учебной документации "," Общение происходит на бесконечной доске,\n на которой каждый участник\n можеть размещать и редактировать контент","присоединиться"); // $(window).width()*0.75 , $(window).height() + 350
-    screen(1250,1500,2," создание авторских публикаций \n и презентаций продуктов или услуг "," Прямо на доске вы можете создать проект.\n Это может быть:\n      ◉ ваше портфолио\n      ◉ художественный проект\n      ◉ презентация продукта или услуги\n\t\t✼ эта страница сделана в penchat","создать");
-    screen(2250,1750,3," платформа для проведения вебинаров "," Эту же доску можно использовать\n для создания и трансляции образовательных программ.\n Или же для создания видео-потока в реальном времени.","смотреть");
-    screen(2500,1250,4," open-source ","У нас открытый исходный код.\nМы сотрудничаем с third-party разработчиками.\nПосетите нашу документацию!","посетить api.penchat.ru");
-    screen(2000,750,5," у нас есть \n программа лицензированния \n для студий \n и творческих сообществ "," Хотите работать в penchat\n в собственной дизайн-студии на своих серверах - свяжитесь с нами!","связаться");
+    screen(1000,1000,1," design and management \n of training documentation "," Communication takes place on an infinite board\n on which each participant can post and edit content","join"); // $(window).width()*0.75 , $(window).height() + 350
+    screen(1250,1500,2," the creation of author's publications\n and the presentation of goods or services "," Directly on the board, you can create a project.\n It may be:\n      ◉ your portfolio\n      ◉ art project\n      ◉ product or service presentation\n\t\t✼ made with penchat","create");
+    screen(2250,1750,3," platform for webinars "," The same board can be used to create and broadcast\n educational programs. Or to create a video stream in real time.","watch");
+    screen(2500,1250,4," open-source ","Let's develop together!","help");
+    //screen(2000,750,5," у нас есть \n программа лицензированния \n для студий \n и творческих сообществ "," Хотите работать в penchat\n в собственной дизайн-студии на своих серверах - свяжитесь с нами!","связаться");
   })();
 }

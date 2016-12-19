@@ -11,7 +11,7 @@
   for(var lt in logo){
     if (!help){
       help=1;
-      var text = new fabric.Text("платформа для публикации и обмена\nавторского и коллективного графического контента", {
+      var text = new fabric.Text("platform for publishing and sharing\nof copyright and collective graphic content", {
         borderColor: "blue",
         cornerColor: "blue",
         originX: "center",

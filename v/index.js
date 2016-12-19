@@ -65,6 +65,34 @@ if (navigator.userAgent.toLowerCase().indexOf('chrome') != -1) {
   socket = io.connect(socketAddr, { 'connect timeout': 5000 });
   var ss = socket.socket;
 }
+// var socket={
+// funcs:{},
+// on:function(event,callback){
+//   socket.funcs[event]=callback
+//   },
+//   emit: function(event,data){
+//     switch (event) {
+//       case 'join':
+//         // Обработка data на сервере
+//         if(data===100){
+//         response={name:'LOL',cap:0,cap1:0,cap2,likes:[],dislikes:[]}; // и тд по табличке
+//         socket.funcs['joindata'](response);
+// }
+//         break;
+//       default:
+//
+//     }
+//
+//   }
+// }
+//
+// socket.emit('join',roomid)
+//
+// socket.on('joindata', function(data){
+//   $(body).append(data.name)
+// })
+
+//Math.floor(Date.now()/1e3)
 
 socket.on('res', function(msg){
   var newM = document.createElement('div'),
