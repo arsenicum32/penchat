@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1280px" height="800px" viewBox="0 0 1280 800" enable-background="new 0 0 1280 800" xml:space="preserve">
+<rect x="1037" y="290" fill="#0000FF" width="190" height="190"/>
+<rect x="7" y="6" fill="#0000FF" width="1280" height="40"/>
+<rect x="54" y="168" fill="#0000FF" width="47" height="187"/>
+<rect x="-1" fill="#E6E6E6" width="1280" height="40"/>
+<rect x="45" y="12" fill="none" width="62" height="28"/>
+<text transform="matrix(1 0 0 1 45 25.6396)" fill="#0000FF" font-family="'GillSans'" font-size="20">file</text>
+<rect x="119" y="12" fill="none" width="62" height="28"/>
+<text transform="matrix(1 0 0 1 119 25.6396)" fill="#0000FF" font-family="'GillSans'" font-size="20">edit</text>
+<rect x="207" y="12" fill="none" width="145" height="28"/>
+<text transform="matrix(1 0 0 1 207 25.6396)" fill="#0000FF" font-family="'GillSans'" font-size="20">add</text>
+<rect x="930" y="12" fill="none" width="161" height="28"/>
+<text transform="matrix(1 0 0 1 930 25.6396)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans'" font-size="20">online: </tspan><tspan x="59.326" y="0" fill="#FF00FF" font-family="'GillSans-Bold'" font-size="20">12</tspan></text>
+<rect x="1071" y="12" fill="none" width="105" height="28"/>
+<text transform="matrix(1 0 0 1 1071 25.6396)" fill="#0000FF" font-family="'GillSans'" font-size="20">share</text>
+<rect x="1176" y="12" fill="none" width="62" height="28"/>
+<text transform="matrix(1 0 0 1 1176 25.6396)" fill="#0000FF" font-family="'GillSans'" font-size="20">join</text>
+<rect x="49" y="160" fill="#E6E6E6" width="47" height="190"/>
+<g>
+	<path fill="#0000FF" d="M73.39,188.127l3.526-2.102c0.331-0.197,0.524-0.571,0.496-0.965c-0.028-0.393-0.271-0.735-0.625-0.881
+		l-16.386-6.742c-0.371-0.152-0.793-0.062-1.075,0.229s-0.369,0.727-0.221,1.108l6.536,16.905c0.141,0.366,0.473,0.617,0.854,0.645
+		c0.382,0.028,0.745-0.171,0.936-0.511l2.037-3.638l5.029,5.188c0.187,0.193,0.441,0.302,0.705,0.302
+		c0.265,0,0.518-0.109,0.706-0.302l2.514-2.593c0.389-0.402,0.389-1.053,0-1.455L73.39,188.127z"/>
+	<path fill="#FF00FF" d="M88.827,175.642l-2.127-2.849c-0.336-0.45-0.962-0.534-1.398-0.187s-0.518,0.993-0.182,1.442l0.891,1.192
+		h-4.306v-4.452l1.148,0.917c0.182,0.145,0.396,0.215,0.609,0.215c0.298,0,0.593-0.138,0.79-0.4
+		c0.337-0.449,0.257-1.095-0.179-1.443l-2.756-2.199c-0.359-0.287-0.861-0.287-1.22,0l-2.756,2.199
+		c-0.436,0.348-0.516,0.994-0.179,1.443c0.337,0.45,0.963,0.532,1.399,0.185l1.148-0.917v4.452h-4.306l0.891-1.192
+		c0.336-0.45,0.255-1.096-0.182-1.442c-0.436-0.347-1.062-0.263-1.399,0.187l-2.127,2.848c-0.276,0.37-0.276,0.886,0,1.255
+		l2.127,2.849c0.197,0.263,0.492,0.401,0.791,0.401c0.212,0,0.427-0.07,0.608-0.214c0.437-0.347,0.518-0.993,0.181-1.443
+		l-0.89-1.191h4.306v4.451l-1.148-0.916c-0.436-0.347-1.062-0.265-1.399,0.184s-0.257,1.095,0.178,1.443l2.756,2.199
+		c0.18,0.143,0.396,0.215,0.61,0.215c0.215,0,0.431-0.072,0.61-0.215l2.756-2.199c0.436-0.348,0.516-0.994,0.179-1.443
+		s-0.963-0.531-1.399-0.184l-1.149,0.916v-4.452h4.306l-0.89,1.192c-0.336,0.45-0.255,1.096,0.182,1.443
+		c0.182,0.144,0.396,0.213,0.608,0.213c0.299,0,0.594-0.138,0.791-0.401l2.127-2.849C89.103,176.527,89.103,176.012,88.827,175.642z
+		"/>
+</g>
+<g>
+	<path fill="#0000FF" d="M83.623,215.627l-5.948-5.545c-0.333-0.31-0.872-0.31-1.205,0L61.681,223.87
+		c-0.119,0.111-0.201,0.253-0.233,0.408l-1.474,6.918c-0.055,0.261,0.032,0.529,0.233,0.717c0.162,0.15,0.379,0.232,0.603,0.232
+		c0.055,0,0.111-0.005,0.166-0.015l7.421-1.374c0.165-0.03,0.317-0.106,0.437-0.217l14.789-13.788
+		C83.956,216.441,83.956,215.938,83.623,215.627z M62.238,228.725l0.771-3.617l4.497,4.193l-3.879,0.718L62.238,228.725z"/>
+	<path fill="#FF7BAC" d="M76.188,233.912c-8.152-3.182-13.46,2.081-15.046,2.88c-2.026,1.021-4.881,2.222-5.544,0.144
+		c-0.4-1.254,1.764-2.594,3.198-3.012c1.045-0.305,0.599-1.84-0.454-1.533c-2.226,0.649-4.882,2.397-4.416,4.858
+		c0.346,1.829,2.804,3.497,7.544,1.178c3.445-1.685,5.785-5.176,13.042-3.368c2.383,0.594,4.31,2.042,5.135,4.245
+		c0.36,0.961,2.008,0.548,1.645-0.422C80.411,236.533,78.633,234.866,76.188,233.912z"/>
+</g>
+<g>
+	<path fill="#FF0000" d="M83.123,265.193h-0.5c-0.138,0-0.25-0.112-0.25-0.25v-6c0-2.343-1.906-4.25-4.25-4.25h-2
+		c-2.344,0-4.25,1.907-4.25,4.25c0,0.414,0.336,0.75,0.75,0.75h2c0.414,0,0.75-0.336,0.75-0.75c0-1.164,0.65-2.75,1.75-2.75
+		s1.75,1.586,1.75,2.75v0.463c-0.754,0.24-1.499,0.369-2.224,0.487c-1.508,0.246-2.932,0.478-3.962,1.733
+		c-0.799,0.974-0.994,2.217-0.508,3.244c0.548,1.159,1.803,1.823,3.443,1.823h1c0.891,0,1.728-0.214,2.63-0.675
+		c0.32,0.408,0.812,0.675,1.37,0.675h2.5c0.414,0,0.75-0.336,0.75-0.75S83.537,265.193,83.123,265.193z M78.873,264.521
+		c-0.81,0.463-1.516,0.673-2.25,0.673c-0.676,0-0.977-0.449-1.095-0.716c-0.227-0.509-0.219-1.286,0.311-1.872
+		c0.665-0.737,1.886-1.2,3.034-1.562V264.521L78.873,264.521L78.873,264.521z"/>
+	<path fill="#0000FF" d="M70.623,265.193h-0.498l-6.809-16.536c-0.115-0.281-0.39-0.464-0.693-0.464s-0.578,0.184-0.694,0.464
+		l-6.809,16.536h-0.498c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h1.002c0.003,0,0.006,0,0.009,0h0.989
+		c0.414,0,0.75-0.336,0.75-0.75c0-0.375-0.275-0.683-0.635-0.738l1.446-3.512h6.377l1.446,3.512
+		c-0.359,0.056-0.635,0.364-0.635,0.738c0,0.414,0.335,0.75,0.75,0.75h4.5c0.414,0,0.75-0.336,0.75-0.75
+		S71.037,265.193,70.623,265.193z M58.802,260.193l2.571-6.244l2.571,6.244H58.802z"/>
+</g>
+<path fill="#0000FF" d="M82.359,315.604c-2.524-1.992-5.874-3.088-9.434-3.088s-6.91,1.097-9.434,3.088
+	c-2.548,2.012-3.952,4.693-3.952,7.552c0,1.719,0.527,3.427,1.525,4.938c0.92,1.395,2.241,2.627,3.83,3.576
+	c-0.074,0.513-0.468,2.016-2.589,3.806c-0.109,0.092-0.154,0.24-0.113,0.377c0.04,0.137,0.158,0.238,0.299,0.256
+	c0.012,0.002,0.321,0.042,0.869,0.042c1.563,0,4.756-0.31,8.661-2.379c0.301,0.016,0.605,0.024,0.904,0.024
+	c3.56,0,6.91-1.097,9.434-3.088c2.548-2.011,3.952-4.693,3.952-7.552S84.907,317.616,82.359,315.604z"/>
+<circle fill="#FF0000" cx="155" cy="12" r="11"/>
+<text transform="matrix(1 0 0 1 150 17)" fill="#F2F2F2" font-family="'GillSans-Bold'" font-size="12">23</text>
+<g>
+	<circle fill="#FF00FF" cx="72.925" cy="295.758" r="7.759"/>
+	<path fill="#FFFF00" d="M72.925,280.241v7.758c3.567,0,6.565,2.411,7.471,5.69h5.977v-13.448H72.925L72.925,280.241z"/>
+	<path fill="#0000FF" d="M72.925,287.999v-1.608l-6.111-10.693l-10.441,17.992h9.081C66.36,290.41,69.357,287.999,72.925,287.999z"
+		/>
+</g>
+<rect x="990" y="293" fill="#0000FF" width="47" height="187"/>
+<rect x="985" y="285" fill="#E6E6E6" width="47" height="190"/>
+<g>
+	<path fill="#0000FF" d="M1009.391,313.127l3.525-2.102c0.332-0.197,0.524-0.571,0.496-0.965c-0.027-0.393-0.27-0.735-0.625-0.881
+		l-16.387-6.742c-0.37-0.152-0.793-0.062-1.074,0.229c-0.282,0.291-0.369,0.727-0.222,1.108l6.536,16.905
+		c0.141,0.366,0.473,0.617,0.854,0.645c0.383,0.028,0.745-0.171,0.936-0.511l2.037-3.638l5.029,5.188
+		c0.188,0.193,0.441,0.302,0.705,0.302c0.265,0,0.518-0.109,0.705-0.302l2.514-2.593c0.389-0.402,0.389-1.053,0-1.455
+		L1009.391,313.127z"/>
+	<path fill="#FF00FF" d="M1024.826,300.642l-2.127-2.849c-0.336-0.45-0.962-0.534-1.398-0.187s-0.518,0.993-0.182,1.442l0.891,1.192
+		h-4.306v-4.452l1.148,0.917c0.182,0.145,0.396,0.215,0.609,0.215c0.298,0,0.593-0.138,0.79-0.4c0.337-0.449,0.256-1.095-0.18-1.443
+		l-2.756-2.199c-0.359-0.287-0.86-0.287-1.22,0l-2.756,2.199c-0.437,0.348-0.516,0.994-0.179,1.443
+		c0.337,0.45,0.963,0.532,1.398,0.185l1.148-0.917v4.452h-4.305l0.891-1.192c0.336-0.45,0.254-1.096-0.182-1.442
+		c-0.437-0.347-1.062-0.263-1.399,0.187l-2.127,2.848c-0.276,0.37-0.276,0.886,0,1.255l2.127,2.849
+		c0.196,0.263,0.492,0.401,0.791,0.401c0.212,0,0.427-0.07,0.608-0.214c0.436-0.347,0.518-0.993,0.181-1.443l-0.89-1.191h4.305
+		v4.451l-1.148-0.916c-0.436-0.347-1.062-0.265-1.398,0.184s-0.258,1.095,0.178,1.443l2.756,2.199
+		c0.18,0.143,0.396,0.215,0.611,0.215s0.43-0.072,0.609-0.215l2.756-2.199c0.436-0.348,0.516-0.994,0.18-1.443
+		c-0.338-0.449-0.964-0.531-1.399-0.184l-1.149,0.916v-4.452h4.307l-0.891,1.192c-0.336,0.45-0.255,1.096,0.182,1.443
+		c0.182,0.144,0.396,0.213,0.607,0.213c0.299,0,0.595-0.138,0.791-0.401l2.127-2.849
+		C1025.103,301.527,1025.103,301.012,1024.826,300.642z"/>
+</g>
+<g>
+	<path fill="#0000FF" d="M1019.623,340.627l-5.948-5.545c-0.333-0.31-0.872-0.31-1.205,0l-14.789,13.788
+		c-0.119,0.111-0.2,0.253-0.233,0.408l-1.474,6.918c-0.056,0.261,0.032,0.529,0.233,0.717c0.162,0.15,0.379,0.232,0.604,0.232
+		c0.055,0,0.11-0.005,0.166-0.015l7.421-1.374c0.165-0.03,0.317-0.106,0.437-0.217l14.789-13.788
+		C1019.956,341.441,1019.956,340.938,1019.623,340.627z M998.238,353.725l0.771-3.617l4.497,4.193l-3.879,0.718L998.238,353.725z"/>
+	<path fill="#FF7BAC" d="M1012.188,358.912c-8.152-3.182-13.46,2.081-15.046,2.88c-2.026,1.021-4.881,2.222-5.545,0.144
+		c-0.4-1.254,1.765-2.594,3.198-3.012c1.046-0.305,0.599-1.84-0.454-1.533c-2.225,0.649-4.881,2.397-4.416,4.858
+		c0.347,1.829,2.805,3.497,7.545,1.178c3.444-1.685,5.785-5.176,13.041-3.368c2.383,0.594,4.31,2.042,5.135,4.245
+		c0.36,0.961,2.008,0.548,1.645-0.422C1016.411,361.533,1014.633,359.866,1012.188,358.912z"/>
+</g>
+<g>
+	<path fill="#FF0000" d="M1019.123,390.193h-0.5c-0.138,0-0.25-0.112-0.25-0.25v-6c0-2.343-1.906-4.25-4.25-4.25h-2
+		c-2.344,0-4.25,1.907-4.25,4.25c0,0.414,0.336,0.75,0.75,0.75h2c0.414,0,0.75-0.336,0.75-0.75c0-1.164,0.65-2.75,1.75-2.75
+		s1.75,1.586,1.75,2.75v0.463c-0.754,0.24-1.499,0.369-2.224,0.487c-1.508,0.246-2.932,0.478-3.962,1.733
+		c-0.799,0.974-0.994,2.217-0.508,3.244c0.548,1.159,1.803,1.823,3.443,1.823h1c0.891,0,1.728-0.214,2.63-0.675
+		c0.32,0.408,0.812,0.675,1.37,0.675h2.5c0.414,0,0.75-0.336,0.75-0.75S1019.537,390.193,1019.123,390.193z M1014.873,389.521
+		c-0.81,0.463-1.516,0.673-2.25,0.673c-0.676,0-0.977-0.449-1.095-0.716c-0.227-0.509-0.219-1.286,0.311-1.872
+		c0.665-0.737,1.886-1.2,3.034-1.562V389.521L1014.873,389.521L1014.873,389.521z"/>
+	<path fill="#0000FF" d="M1006.623,390.193h-0.498l-6.809-16.536c-0.115-0.281-0.39-0.464-0.693-0.464s-0.578,0.184-0.693,0.464
+		l-6.809,16.536h-0.498c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h1.002c0.003,0,0.006,0,0.009,0h0.989
+		c0.414,0,0.75-0.336,0.75-0.75c0-0.375-0.275-0.683-0.635-0.738l1.445-3.512h6.378l1.446,3.512
+		c-0.359,0.056-0.635,0.364-0.635,0.738c0,0.414,0.336,0.75,0.75,0.75h4.5c0.414,0,0.75-0.336,0.75-0.75
+		S1007.037,390.193,1006.623,390.193z M994.802,385.193l2.571-6.244l2.571,6.244H994.802z"/>
+</g>
+<path fill="#0000FF" d="M1018.359,440.604c-2.524-1.991-5.875-3.089-9.435-3.089s-6.91,1.098-9.435,3.089
+	c-2.548,2.012-3.951,4.693-3.951,7.552c0,1.719,0.527,3.427,1.524,4.938c0.921,1.396,2.241,2.628,3.829,3.575
+	c-0.073,0.514-0.467,2.016-2.588,3.807c-0.109,0.092-0.154,0.24-0.113,0.377c0.039,0.137,0.157,0.238,0.299,0.256
+	c0.012,0.002,0.32,0.041,0.869,0.041c1.562,0,4.756-0.31,8.661-2.379c0.302,0.017,0.604,0.024,0.904,0.024
+	c3.56,0,6.91-1.097,9.435-3.088c2.548-2.011,3.951-4.693,3.951-7.552S1020.907,442.616,1018.359,440.604z"/>
+<g>
+	<circle fill="#FF00FF" cx="1008.925" cy="420.757" r="7.758"/>
+	<path fill="#FFFF00" d="M1008.925,405.24v7.759c3.567,0,6.565,2.411,7.472,5.69h5.977V405.24H1008.925L1008.925,405.24z"/>
+	<path fill="#0000FF" d="M1008.925,412.999v-1.608l-6.11-10.693l-10.441,17.992h9.08
+		C1002.359,415.41,1005.357,412.999,1008.925,412.999z"/>
+</g>
+<rect x="13" y="740" fill="none" width="555" height="265"/>
+<text transform="matrix(1 0 0 1 13 780.2881)"><tspan x="0" y="0" font-family="'Avenir-Black'" font-size="48">avenir </tspan><tspan x="153.79" y="0" font-family="'Helvetica-Light'" font-size="16">VS</tspan><tspan x="173.341" y="0" font-family="'Avenir-Black'" font-size="48"> </tspan><tspan x="187.549" y="0" font-family="'GillSans-UltraBold'" font-size="48">Gill Sans</tspan></text>
+<rect x="204" y="160" fill="#E6E6E6" width="190" height="190"/>
+<circle fill="#0000FF" cx="299" cy="256.998" r="34"/>
+<rect x="219" y="287.323" fill="none" width="77" height="29"/>
+<text transform="matrix(1 0 0 1 219 298.2349)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16">size:</tspan><tspan x="35.5" y="0" font-family="'GillSans-Bold'" font-size="16"> </tspan><tspan x="40.25" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">12px</tspan></text>
+<rect x="219" y="305.672" fill="none" width="114" height="29"/>
+<text transform="matrix(1 0 0 1 219 316.5845)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16">mode:</tspan><tspan x="50.312" y="0" font-family="'GillSans-Bold'" font-size="16"> </tspan><tspan x="55.062" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">pensill</tspan></text>
+<rect x="219" y="323.516" fill="none" width="114" height="29"/>
+<text transform="matrix(1 0 0 1 219 334.4282)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16">color:</tspan><tspan x="45.945" y="0" font-family="'GillSans-Bold'" font-size="16"> </tspan><tspan x="50.695" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">blue</tspan></text>
+<rect x="1032" y="285" fill="#E6E6E6" width="190" height="190"/>
+<circle fill="#0000FF" cx="1127" cy="381.998" r="34"/>
+<rect x="1047" y="412.322" fill="none" width="77" height="29"/>
+<text transform="matrix(1 0 0 1 1047 423.2344)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16">size:</tspan><tspan x="35.5" y="0" font-family="'GillSans-Bold'" font-size="16"> </tspan><tspan x="40.25" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">12px</tspan></text>
+<rect x="1047" y="430.672" fill="none" width="114" height="29"/>
+<text transform="matrix(1 0 0 1 1047 441.584)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16">mode:</tspan><tspan x="50.312" y="0" font-family="'GillSans-Bold'" font-size="16"> </tspan><tspan x="55.062" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">pensill</tspan></text>
+<rect x="1047" y="448.516" fill="none" width="114" height="29"/>
+<text transform="matrix(1 0 0 1 1047 459.4277)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16">color:</tspan><tspan x="45.945" y="0" font-family="'GillSans-Bold'" font-size="16"> </tspan><tspan x="50.695" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">blue</tspan></text>
+<rect x="207" y="388" fill="#E6E6E6" width="190" height="190"/>
+<rect x="721" y="579" fill="#E6E6E6" width="190" height="190"/>
+<rect x="222" y="404.189" fill="none" width="143" height="29"/>
+<text transform="matrix(1 0 0 1 222 415.1016)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16">font:</tspan><tspan x="38.328" y="0" font-family="'GillSans-Bold'" font-size="16"> </tspan><tspan x="43.078" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">Gill Sans</tspan></text>
+<rect x="222" y="516.322" fill="none" width="114" height="29"/>
+<text transform="matrix(1 0 0 1 222 527.2344)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16">align:</tspan><tspan x="42.609" y="0" font-family="'GillSans-Bold'" font-size="16"> </tspan><tspan x="47.359" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">center</tspan></text>
+<rect x="222.5" y="538.016" fill="none" width="170" height="29"/>
+<text transform="matrix(1 0 0 1 222.5 548.9277)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16">background:</tspan><tspan x="100.047" y="0" font-family="'GillSans-Bold'" font-size="16"> </tspan><tspan x="104.797" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">null</tspan></text>
+<rect x="457" y="389" fill="#E6E6E6" width="190" height="190"/>
+<circle fill="#0000FF" cx="544" cy="485.998" r="26"/>
+<rect x="449" y="161" fill="#E6E6E6" width="190" height="190"/>
+<rect x="462" y="205.704" fill="none" width="160" height="28.292"/>
+<text transform="matrix(1 0 0 1 462.001 216.3486)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="15.6098">width:</tspan><tspan x="49.695" y="0" font-family="'GillSans-Bold'" font-size="15.6098" letter-spacing="74"> </tspan><tspan x="128.958" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="15.6098" text-decoration=" underline">12px</tspan></text>
+<rect x="460.5" y="227.273" fill="none" width="160" height="29.744"/>
+<text transform="matrix(1 0 0 1 460.4995 238.4658)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16.4103">height:</tspan><tspan x="57.236" y="0" font-family="'GillSans-Bold'" font-size="16.4103" letter-spacing="65"> </tspan><tspan x="127.361" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16.4103" text-decoration=" underline">12px</tspan></text>
+<rect x="464" y="249.53" fill="none" width="160" height="30.326"/>
+<text transform="matrix(1 0 0 1 463.9995 260.9404)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16.732">fill:</tspan><tspan x="26.242" y="0" font-family="'GillSans-Bold'" font-size="16.732" letter-spacing="106"> </tspan><tspan x="137.883" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16.732" text-decoration=" underline">red</tspan></text>
+<rect x="462" y="272.818" fill="none" width="160" height="28.293"/>
+<text transform="matrix(1 0 0 1 462.001 283.4634)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="15.6098">id:</tspan><tspan x="19.108" y="0" font-family="'GillSans-Bold'" font-size="15.6098" letter-spacing="26"> </tspan><tspan x="50.329" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="15.6098" text-decoration=" underline">HFHESKufehsu&amp;8</tspan></text>
+<rect x="462" y="292.675" fill="none" width="160" height="29.743"/>
+<text transform="matrix(1 0 0 1 462 303.8667)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16.4103">background:</tspan><tspan x="102.613" y="0" font-family="'GillSans-Bold'" font-size="16.4103" letter-spacing="19"> </tspan><tspan x="127.155" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16.4103" text-decoration=" underline">none</tspan></text>
+<rect x="460.5" y="314.93" fill="none" width="160" height="30.327"/>
+<text transform="matrix(1 0 0 1 460.4995 326.3413)"><tspan x="0" y="0" fill="#0000FF" font-family="'GillSans-Bold'" font-size="16.732">copy:</tspan><tspan x="44.379" y="0" font-family="'GillSans-Bold'" font-size="16.732" letter-spacing="73"> </tspan><tspan x="123.055" y="0" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16.732" text-decoration=" underline">green</tspan></text>
+<rect x="204" y="103" fill="none" width="225" height="65"/>
+<text transform="matrix(1 0 0 1 204 113.832)"><tspan x="0" y="0" font-family="'GillSans-Bold'" font-size="16" text-decoration=" underline">http://fabricjs.com/free</tspan><tspan x="195.742" y="0" font-family="'GillSans-Bold'" font-size="16" text-decoration=" underline">-</tspan><tspan x="0" y="16" font-family="'GillSans-Bold'" font-size="16" text-decoration=" underline">drawing - logic</tspan></text>
+<rect x="461.5" y="174.665" fill="none" width="158" height="46"/>
+<text transform="matrix(1 0 0 1 461.5 191.7993)" fill="#0000FF" font-family="'GillSans-UltraBold'" font-size="23" text-decoration=" underline">Rect</text>
+<rect x="207.5" y="138" fill="none" width="177" height="17"/>
+<text transform="matrix(1 0 0 1 207.5 148.9121)"><tspan x="0" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">это</tspan><tspan x="22.781" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="20" text-decoration=" underline"> </tspan><tspan x="47.867" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">когда</tspan><tspan x="83.234" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="20" text-decoration=" underline"> </tspan><tspan x="108.32" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">рисование</tspan></text>
+<rect x="219" y="361" fill="none" width="177" height="22"/>
+<text transform="matrix(1 0 0 1 219 371.9121)"><tspan x="0" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">это</tspan><tspan x="22.781" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="6" text-decoration=" underline"> </tspan><tspan x="33.502" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">когда</tspan><tspan x="68.87" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="6" text-decoration=" underline"> </tspan><tspan x="79.591" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">активен</tspan><tspan x="130.654" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="6" text-decoration=" underline"> </tspan><tspan x="141.375" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">текст</tspan></text>
+<rect x="721" y="545.322" fill="none" width="177" height="22"/>
+<text transform="matrix(1 0 0 1 721 556.2344)"><tspan x="0" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">это</tspan><tspan x="22.781" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="1" text-decoration=" underline"> </tspan><tspan x="29.092" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">когда</tspan><tspan x="64.459" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="1" text-decoration=" underline"> </tspan><tspan x="70.77" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">кликаем</tspan><tspan x="122.551" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="1" text-decoration=" underline"> </tspan><tspan x="128.861" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">по</tspan><tspan x="145.502" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="1" text-decoration=" underline"> </tspan><tspan x="151.812" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">font</tspan></text>
+<rect x="452" y="124.5" fill="none" width="177" height="22"/>
+<text transform="matrix(1 0 0 1 452 135.4121)"><tspan x="0" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">это</tspan><tspan x="22.781" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="2" text-decoration=" underline"> </tspan><tspan x="30.013" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">когда</tspan><tspan x="65.38" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="2" text-decoration=" underline"> </tspan><tspan x="72.612" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">активен</tspan><tspan x="123.674" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="2" text-decoration=" underline"> </tspan><tspan x="130.906" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">объект</tspan></text>
+<rect x="460.5" y="355" fill="none" width="327.5" height="28"/>
+<text transform="matrix(1 0 0 1 460.5 365.9121)"><tspan x="0" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">это</tspan><tspan x="22.781" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="27" text-decoration=" underline"> </tspan><tspan x="54.732" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">когда</tspan><tspan x="90.1" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="27" text-decoration=" underline"> </tspan><tspan x="122.051" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">активно</tspan><tspan x="174.121" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="27" text-decoration=" underline"> </tspan><tspan x="206.072" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">выбор</tspan><tspan x="247.346" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="27" text-decoration=" underline"> </tspan><tspan x="279.297" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">фигуры </tspan><tspan x="0" y="16" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">(генерим</tspan><tspan x="60.125" y="16" font-family="'GillSans-Light'" font-size="16" letter-spacing="94" text-decoration=" underline"> </tspan><tspan x="159.234" y="16" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">на</tspan><tspan x="174.031" y="16" font-family="'GillSans-Light'" font-size="16" letter-spacing="94" text-decoration=" underline"> </tspan><tspan x="273.141" y="16" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">рандом)</tspan></text>
+<rect x="921.75" y="234" fill="none" width="327.5" height="22"/>
+<text transform="matrix(1 0 0 1 921.75 244.9121)"><tspan x="0" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">так</tspan><tspan x="20.68" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="62" text-decoration=" underline"> </tspan><tspan x="87.889" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">эта</tspan><tspan x="108.826" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="62" text-decoration=" underline"> </tspan><tspan x="176.034" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">хня</tspan><tspan x="198.933" y="0" font-family="'GillSans-Light'" font-size="16" letter-spacing="62" text-decoration=" underline"> </tspan><tspan x="266.141" y="0" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">работает </tspan></text>
+<path fill="#FF00FF" d="M629,246.25c0,2.624-2.126,4.75-4.75,4.75h-0.5c-2.624,0-4.75-2.126-4.75-4.75v-52.5
+	c0-2.624,2.126-4.75,4.75-4.75h0.5c2.624,0,4.75,2.126,4.75,4.75V246.25z"/>
+<path fill="#FF00FF" d="M384,457.25c0,2.623-2.126,4.75-4.75,4.75h-0.5c-2.624,0-4.75-2.127-4.75-4.75v-52.5
+	c0-2.623,2.126-4.75,4.75-4.75h0.5c2.624,0,4.75,2.127,4.75,4.75V457.25z"/>
+<text transform="matrix(1 0 0 1 674 160)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="12">http://fabricjs.com/image-filters</tspan><tspan x="0" y="28.8" font-family="'MyriadPro-Regular'" font-size="12">(эта менюха для изображений)</tspan><tspan x="0" y="57.6" font-family="'MyriadPro-Regular'" font-size="12">просто добавляем раздел filters,</tspan><tspan x="0" y="72" font-family="'MyriadPro-Regular'" font-size="12">если выделенно изображение</tspan></text>
+<rect x="222" y="421" fill="#F2F2F2" width="143" height="79"/>
+<text transform="matrix(1 0 0 1 227 436)" fill="#0000FF" font-family="'GillSans-Light'" font-size="16">hello world</text>
+<circle fill="#FF0000" cx="892.5" cy="597.5" r="7.5"/>
+<rect x="727.75" y="585.5" fill="none" width="388" height="242.5"/>
+<text transform="matrix(1 0 0 1 727.75 599.5)"><tspan x="0" y="0" font-family="'GillSans-Light'" font-size="16">Вашу</tspan><tspan x="32.781" y="0" font-family="'MonotypeGurmukhi'" font-size="16"> </tspan><tspan x="38.25" y="0" font-family="'GillSans-Light'" font-size="16">мысль</tspan><tspan x="77.445" y="0" font-family="'MonotypeGurmukhi'" font-size="16">,</tspan><tspan x="0" y="16" font-family="'Impact'" font-size="16">мечтающую на </tspan><tspan x="0" y="32" font-family="'Helvetica-Light'" font-size="16">как выжиревший </tspan><tspan x="0" y="48" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">буду</tspan><tspan x="29.422" y="48" fill="#FF00FF" font-family="'AlNile'" font-size="16" text-decoration=" underline"> </tspan><tspan x="32.781" y="48" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">дразнить</tspan><tspan x="91.922" y="48" fill="#FF00FF" font-family="'AlNile'" font-size="16" text-decoration=" underline"> </tspan><tspan x="95.281" y="48" fill="#FF00FF" font-family="'GillSans-Light'" font-size="16" text-decoration=" underline">об</tspan><tspan x="112.289" y="48" fill="#FF00FF" font-family="'Avenir-Light'" font-size="16" text-decoration=" underline"> </tspan><tspan x="0" y="64" font-family="'GillSans-Light'" font-size="16">досыта</tspan><tspan x="46.68" y="64" font-family="'Bauhaus93'" font-size="16"> </tspan><tspan x="50.68" y="64" font-family="'GillSans-Light'" font-size="16">изъиздеваюсь</tspan><tspan x="140.242" y="64" font-family="'Bauhaus93'" font-size="16">,</tspan><tspan x="0" y="96" font-family="'AndaleMono'" font-size="16">У меня в душе</tspan><tspan x="124.82" y="96" font-family="'GillSans-Light'" font-size="16"> </tspan><tspan x="0" y="112" font-family="'Verdana'" font-size="16">и старческой</tspan><tspan x="0" y="128" font-family="'GillSans-Light'" font-size="16">Мир</tspan><tspan x="28.617" y="128" font-family="'Futura-Medium'" font-size="16"> </tspan><tspan x="33.555" y="128" font-family="'GillSans-Light'" font-size="16">огромив</tspan><tspan x="89.18" y="128" font-family="'Futura-Medium'" font-size="16"> </tspan><tspan x="0" y="144" font-family="'ComicSansMS'" font-size="16">иду — красивый,</tspan><tspan x="0" y="160" font-family="'ArialMT'" font-size="16">двадцатидвухлетний.</tspan></text>
+<rect x="471" y="408" fill="#0000FF" width="50" height="50"/>
+<polygon fill="#0000FF" points="562.699,556 598.85,493.385 635,556 "/>
+<rect x="44.5" y="393.822" fill="none" width="149" height="66"/>
+<text transform="matrix(1 0 0 1 44.5 405.2783)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="16" text-decoration=" underline">чат</tspan><tspan x="0" y="16" font-family="'ArialMT'" font-size="16" text-decoration=" underline">prompt – алерт </tspan><tspan x="0" y="32" font-family="'ArialMT'" font-size="16" text-decoration=" underline">всем</tspan></text>
+</svg>

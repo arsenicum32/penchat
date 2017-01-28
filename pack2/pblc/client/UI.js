@@ -55,7 +55,51 @@ $(document).ready(function(){
 
   items = {
     file: '<h2>no files uploaded</h2>',
-    edit: 'join or login (╯°□°）╯︵ ┻━┻',
+    edit: `
+      <div class="timeline" id="visualization"></div>
+      <script>
+      var container = document.getElementById('visualization');
+
+// Create a DataSet (allows two way data-binding)
+var items = new vis.DataSet([
+  {id: 1, content: '<a href="#">Даша</a> вошла', start: '2013-04-20',type:'point'},
+  {id: 5, content: 'Петя вошел', start: '2013-04-25',type:'point'},
+  {id: 6, content: '<a href="#>Вася покинул чат</a>', start: '2013-04-27',type:'point'}
+]);
+
+// Configuration for the Timeline
+var options = {
+  width: '100%',
+  height: 120
+};
+
+// Create a Timeline
+var timeline = new vis.Timeline(container, items, options);
+var t=6;
+setInterval(function(){
+items.add({id: t++, content: '<b>Вася</b> покинул чат', start: new Date() ,type:'point'})
+move()
+},1000)
+
+
+function move (percentage) {
+if(percentage){
+  var range = timeline.getWindow();
+      var interval = range.end - range.start;
+
+      timeline.setWindow({
+          start: range.start.valueOf() - interval * percentage,
+          end:   range.end.valueOf()   - interval * percentage
+      });
+}else{
+  timeline.setWindow({
+          start: new Date().getTime() - 5000,
+          end:   new Date().getTime() + 5000
+  });
+}
+}
+      </script>
+    `,//'join or login (╯°□°）╯︵ ┻━┻',
     add: `
       <div class='rect adder' onclick='sock.add(addObject({type: "Rect"}))'></div>
       <div class='circle adder' onclick='sock.add(addObject({type: "Circle"}))'></div>

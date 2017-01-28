@@ -270,3 +270,11 @@ input {
   margin: auto;
   margin-left: 0px;
 }
+
+.timeline{
+  width: 100vw;
+  background: #eee;
+}
+.timeline div{
+  border: none;
+}
