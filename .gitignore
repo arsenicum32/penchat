@@ -1,1 +1,9 @@
 node_modules/
+npm-debug.log
+public/
+scripts/
+*.jpg
+*.md
+views/
+*.json
+*.html

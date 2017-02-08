@@ -21,7 +21,7 @@ io.sockets.on( 'connection', function( socket ) {
   });
   socket.on('snd', function (data) {
       //console.log('snd: ' + JSON.stringify(data));
-      trySave(data);
+      //trySave(data);
       data.room?
       io.sockets.in(data.room).emit('res', data):
       void(0);
