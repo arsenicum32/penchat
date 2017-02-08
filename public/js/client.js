@@ -1,15 +1,9 @@
-#penchat api
-
-Подключение к сокет-серверу:
-
-```
-var socket = io.connect( 'http://85.143.209.210:1280' ); // 85.143.209.210 сокет по этому ip
+var socket = io.connect( 'http://85.143.209.210:1280' ); // 85.143.209.210
 
 socket.on('connect', function() {
-     socket.emit('join', 'room'); //комната и её получение
+     socket.emit('join', 'room'); //chat room id unique to two users
 });
 
-// получение сообщения
 socket.on( 'res', function( data ) {
      $("#chat" ).append('<div>' + data.name + ' : ' + data.message + '</div>');
 });
@@ -22,9 +16,9 @@ $(document).ready(function(){
   })
 })
 
-//отправка сообщения
+
+
+//Form js
 function sendpm(room,message,name) {
      socket.emit( 'snd', { room: room, message: message, name: name });
 }
-
-```
